@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add New Country: Documentation</title>
+
+    <link href="templates/css/bootstrap.css" rel="stylesheet">
+    <link href="templates/css/font-awesome/font-awesome.css" rel="stylesheet">
+	<link href="templates/css/mm-docs.css" rel="stylesheet">
+
+	<script src="templates/js/jquery.js"></script>
+	<script src="templates/js/functions.js"></script>
+
+	<link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Documentation</a>
+            </div>
+
+			<div class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+				</div>
+            </div>
+		</nav>
+
+        <div id="page-wrapper">
+                        <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Add New Country</h1>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Name</div>
+                        <div class="panel-body">Enter new name for country. Max 250 chars.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">2 Letter ISO Code (International Organization for Standardization) </div>
+                        <div class="panel-body">2 letter code as defined by the International Organization for Standardization. More info <a href="http://en.wikipedia.org/wiki/ISO_3166-1" onclick="window.open(this);return false">here</a>.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">3 Letter UN Code (United Nations)</div>
+                        <div class="panel-body">3 letter code as defined by the United Nations. More info <a href="http://en.wikipedia.org/wiki/ISO_3166-1" onclick="window.open(this);return false">here</a>.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">3 Digit UN Code (United Nations)</div>
+                        <div class="panel-body">2 digit code as defined by the United Nations. More info <a href="http://en.wikipedia.org/wiki/ISO_3166-1" onclick="window.open(this);return false">here</a>.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Enable Country</div>
+                        <div class="panel-body">Yes to enable, No to disable.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Tangible Tax Override (%) / Digital Tax Override (%)</div>
+                        <div class="panel-body">Three options are available for tax overrides:<br><br>
+                        <div class="alert alert-info">
+                        <b>Blank or 0</b> = No tax override. Defaults to fixed tax defaults in <a href="ad-settings.html">settings</a> if set.<br>
+                        <b>10</b> = Explicit tax override for country, this overrides the settings default. No percentage symbol. Example is 10%<br>
+                        <b>no</b> = Explicit override that disables tax for this country, regardless of settings defaults.
+                        </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">EU (European Union) Country</div>
+                        <div class="panel-body">Does this country reside in the E.U?</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row footerArea">
+			</div>
+        </div>
+
+</div>
+
+<script>
+//<![CDATA[
+jQuery(document).ready(function() {
+  loadTopMenu();
+  loadLeftMenu();
+  loadFooter();
+});
+//]]>
+</script>
+
+<script src="templates/js/bootstrap.js"></script>
+<script src="templates/js/plugins/jquery.metismenu.js"></script>
+<script src="templates/js/plugins/jquery.ibox.js"></script>
+
+</body>
+</html>

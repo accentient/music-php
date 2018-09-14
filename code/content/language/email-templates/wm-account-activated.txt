@@ -1,0 +1,14 @@
+The following account is now active:
+
+{NAME}
+{EMAIL}
+{IP}
+{TZ}
+
+You can disable this notification in your administration settings:
+
+Settings > Accounts
+
+To edit this account, log into your administration area:
+
+{WEBSITE_URL}{ADMIN_FOLDER}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Payment Gateways: Documentation</title>
+
+    <link href="templates/css/bootstrap.css" rel="stylesheet">
+    <link href="templates/css/font-awesome/font-awesome.css" rel="stylesheet">
+	<link href="templates/css/mm-docs.css" rel="stylesheet">
+
+	<script src="templates/js/jquery.js"></script>
+	<script src="templates/js/functions.js"></script>
+
+	<link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Documentation</a>
+            </div>
+
+			<div class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+				</div>
+            </div>
+		</nav>
+
+        <div id="page-wrapper">
+                        <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Payment Gateways</h1>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Introduction</div>
+                        <div class="panel-body">Maian Music offers a number of payment methods for secure credit card payments. Maian Music has no server-to-server integrations. meaning the buyer will always leave your site to pay via the gateway. Very much like when you buy on eBay and pay via Paypal.<br><br>
+  Most gateways offer many customisation options for their hosted solutions, some of which are integrated in Maian Music. Having the gateway host the payment page reduces the cost of <a href="http://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard" onclick="window.open(this);return false">PCI compliancy</a>, required by many banks.</div>
+					</div>
+				</div>
+			</div>
+
+                  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Integration</div>
+                        <div class="panel-body">Unlike many systems that require you to download plugins to make payment methods work, Maian Music has each payment option fully integrated as default. A lot of API plugin code is badly coded and over blown with unecessary data as it incorporates many methods related to different payment routines. Maian Music has each gateway integrated with minimal code for efficiency.<br><br>
+  Its worth noting that I would like to thank the many gateway developers who kindly answered my integration questions.<br><br>
+  <span style="color:red">Important: Please note that since these docs were prepared, the gateway interface may have changed. If it has changed try and let me know, thanks.</span></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">SSL</div>
+                        <div class="panel-body">Even though the payments aren`t taken on your own website and SSL isn`t required, it is strongly <b>recommended</b> you <b>DO</b> install a SSL certificate on your server to prevent error messages
+  appearing to the buyer about returning to an insecure area. SSL certificates are cheap and worth the investment.<br><br>Note that some payment gateways DO require a SSL connection.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Test Mode (Recommended)</div>
+                        <div class="panel-body">It is recommended you enable test mode for any gateway first to make sure the payment routines are working ok.<br><br>
+  Don`t forget to switch to live when your store goes live.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Debugging</div>
+                        <div class="panel-body">All operations are logged to a text file, so you can see where a payment might be failing. Enable the logs in admin:<br><br>
+  Settings > Payment > Enable Gateway Log<br><br>
+  It is recommended you leave logging enabled for the first few payments to make sure everything is working.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Supported Payment Gateways - Click for Info/Setup Instructions</div>
+                        <div class="panel-body">
+						<a href="gw-2checkout.html">2Checkout</a><br>
+						<a href="gw-auth.html">Authorize.net</a><br>
+						<a href="gw-beanstream.html">Beanstream</a><br>
+						<a href="gw-cardsave.html">Cardsave</a><br>
+						<a href="gw-cardstream.html">Cardstream</a><br>
+						<a href="gw-ccnow.html">CCNow</a><br>
+						<a href="gw-charity.html">CharityClear</a><br>
+						<a href="gw-eway.html">eWay UK</a><br>
+            <a href="gw-fetch.html">Fetch</a><br>
+            <a href="gw-iris.html">Global Iris</a><br>
+						<a href="gw-icepay.html">IcePay</a><br>
+						<a href="gw-iridium.html">Iridium Corporation</a><br>
+						<a href="gw-jambo.html">JamboPay (Kenya)</a><br>
+						<a href="gw-jambo2.html">JamboPay (Tanzania)</a><br>
+						<a href="gw-paypal.html">Paypal</a><br>
+						<a href="gw-paypoint.html">Paypoint</a><br>
+						<a href="gw-paytrail.html">Paytrail</a><br>
+						<a href="gw-payza.html">Payza</a><br>
+						<a href="gw-realex.html">Realex Payments</a><br>
+						<a href="gw-sagepay.html">Sagepay</a><br>
+            <a href="gw-sectrading.html">Secure Trading</a><br>
+						<a href="gw-skrill.html">Skrill</a><br>
+						<a href="gw-worldpay.html">WorldPay</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Add New Payment Gateway</div>
+                        <div class="panel-body">More info <a href="ad-new-gateway.html">here</a>.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row footerArea">
+			</div>
+        </div>
+
+</div>
+
+<script>
+//<![CDATA[
+jQuery(document).ready(function() {
+  loadTopMenu();
+  loadLeftMenu();
+  loadFooter();
+});
+//]]>
+</script>
+
+<script src="templates/js/bootstrap.js"></script>
+<script src="templates/js/plugins/jquery.metismenu.js"></script>
+<script src="templates/js/plugins/jquery.ibox.js"></script>
+
+</body>
+</html>

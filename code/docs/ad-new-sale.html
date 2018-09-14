@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add New Sale: Documentation</title>
+
+    <link href="templates/css/bootstrap.css" rel="stylesheet">
+    <link href="templates/css/font-awesome/font-awesome.css" rel="stylesheet">
+	<link href="templates/css/mm-docs.css" rel="stylesheet">
+
+	<script src="templates/js/jquery.js"></script>
+	<script src="templates/js/functions.js"></script>
+
+	<link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Documentation</a>
+            </div>
+
+			<div class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+				</div>
+            </div>
+		</nav>
+
+        <div id="page-wrapper">
+                        <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Add New Sale</h1>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Name</div>
+                        <div class="panel-body">Enter account name. Once you start to type the auto completion will kick in offering account suggestions. If you
+                        enter an account that doesn`t exist, it will be created. Max 250 chars.<br><br>
+                        Note that the auto complete only starts after min 4 characters are typed, to change this edit the 'AUTO_COMPLETE_MIN_LENGTH' value in the
+                        'control/defined.php' file.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Email</div>
+                        <div class="panel-body">Enter account email address. Once you start to type the auto completion will kick in offering account suggestions. If you
+                        enter an account that doesn`t exist, it will be created.<br><br>
+                        Note that the auto complete only starts after min 4 characters are typed, to change this edit the 'AUTO_COMPLETE_MIN_LENGTH' value in the
+                        'control/defined.php' file.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Address</div>
+                        <div class="panel-body">Enter account address. If you select an existing account the address will be auto filled for quickness.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Send Email to Buyer (New Sale ONLY)</div>
+                        <div class="panel-body">If checked, sends email to buyer detailing the manual sale.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Sale Clipboard</div>
+                        <div class="panel-body">Select which items on the sale clipboard are applicable to the new sale. Items can be added to the sale clipboard
+                        via the <a href="ad-collections.html">collection</a> or <a href="ad-tracks.html">tracks</a> screens.<br><br>
+                        Use the checkboxes to select the applicable items. If you wish to offer an item for free, check the free checkbox. This will change the price to 0.00. Uncheck to revert back. Clicking the "Add" header
+                        toggles the main checkboxes.<br><br>
+                        To view the contents of the sale clipboard click the <button type="button" class="btn btn-success btn-sm"><i class="fa fa-shopping-cart fa-fw"></i></button> button.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Clear Selected Items from Clipboard When Sale Added</div>
+                        <div class="panel-body">Use this option if you wish to remove the selected items from the clipboard after the sale is added.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Payment &amp; Tax > Shipping Total</div>
+                        <div class="panel-body">Enter shipping option for this sale if applicable. Total will be auto calculated when the sale is entered. If the account auto complete was used, the correct option may be selected.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Payment &amp; Tax > Payment Gateway (Edit screen ONLY)</div>
+                        <div class="panel-body">Sales added in the admin interface are marked as "Manual". Update to a payment gateway if you sent a manual payment request via a gateway.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Payment &amp; Tax > Tangible Tax Country</div>
+                        <div class="panel-body">Specify tax country for tangible tax if applicable. This will be used for the revenue filters. When you select the country
+                        the tax will be auto populated. If you have a default tangible rate in the <a href="ad-settings.html">settings</a>, this rate will ONLY appear if there is no tax set for the country OR if the <a href="ad-new-country.html">country</a> doesn`t have tax explicitly OFF.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Payment &amp; Tax > Tangible Goods Tax Rate (If Applicable) (%)</div>
+                        <div class="panel-body">Enter tangible tax rate for this sale if applicable. Total will be auto calculated when the sale is entered / updated.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Payment &amp; Tax > Digital Tax Country</div>
+                        <div class="panel-body">Specify tax country for digital tax if applicable. This will be used for the revenue filters. When you select the country
+                        the tax will be auto populated. If you have a default digital rate in the <a href="ad-settings.html">settings</a>, this rate will ONLY appear if there is no tax set for the country OR if the <a href="ad-new-country.html">country</a> doesn`t have tax explicitly OFF.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Payment &amp; Tax > Digital Goods Tax Rate (If Applicable) (%)</div>
+                        <div class="panel-body">Enter digital tax rate for this sale if applicable. Total will be auto calculated when the sale is entered / updated.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Payment &amp; Tax > Payment Status</div>
+                        <div class="panel-body">Enter custom payment status. For example, new sales might be "Completed" unless you have a reason for another status. When you start to type, all existing statuses will be shown via an auto complete dropdown if you want to select
+                        an existing status.<br><br>
+                        <img class="img-responsive" src="templates/images/screenshots/27.jpg" alt="" title=""><br><br>
+                        Note that the auto complete only starts after min 4 characters are typed, to change this edit the 'AUTO_COMPLETE_MIN_LENGTH' value in the
+                        'control/defined.php' file.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Notes/Options > Sale Date</div>
+                        <div class="panel-body">Enter sale date. Clicking into box launches the calendar for easy date selection.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Notes/Options > Invoice</div>
+                        <div class="panel-body">Enter invoice number. To automatically get the next invoice in sequence, click the <i class="fa fa-refresh fa-fw"></i> icon. If you leave this
+                        field blank the next invoice number will automatically be calculated when the sale is added.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Notes/Options > Transaction ID</div>
+                        <div class="panel-body">Enter transaction ID if applicable.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Notes/Options > IP Address</div>
+                        <div class="panel-body">Enter IP address if known. If the account auto complete was used, this may already be filled in.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Notes/Options > Additional Notes</div>
+                        <div class="panel-body">Enter backend notes if applicable.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Resend Licence Agreement > Resend Email Address (Edit ONLY and ONLY if enabled)</div>
+                        <div class="panel-body">For resending licence agreement. Displays initial account address.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Resend Licence Agreement > Copy Licence Agreement To (Edit ONLY and ONLY if enabled)</div>
+                        <div class="panel-body">Resend to multiple addresses if required. Comma delimit. Agreement data is resent as set in <a href="ad-settings.html">settings</a>.<br><br>Click the "Resend" button ONLY. Agreement is NOT
+                        sent when the update sale button is clicked.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Items (Download)</div>
+                        <div class="panel-body">This option is shown <b>ONLY</b> on sale edit screen</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Items (Download) - View Download History</div>
+                        <div class="panel-body">Clicking this option displays a window that shows the download history. Each time someone downloads a file, a timestamp
+                        is written with the visitors IP address. A log is also written when a file download is restored by admin. See the following screenshot:<br><br>
+                        <img class="img-responsive" src="templates/images/screenshots/8.jpg" alt="" title=""><br>
+                        The following options are available in this window:<br><br>
+                        <button type="button" class="btn btn-primary btn-sm"><i class="fa fa-save fa-fw"></i></button> = Export item history to CSV<br><br>
+                        <button type="button" class="btn btn-success btn-sm"><i class="fa fa-times fa-fw"></i></button> = Delete ALL item history<br><br>
+                        <i class="fa fa-times fa-fw mm_red"></i> = Delete individual history entry
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Items (Download) - Reset Selected Downloads</div>
+                        <div class="panel-body">To reset downloads, check the relevant boxes for any item in the "Remove/Reset" column, then click the
+                        "Reset Selected Downloads" button. Check the "Send Email to Buyer" checkbox to send buyer notification of reset. Clicking the
+                        "Remove/Reset" column header will toggle all boxes.<br><br>
+                        When you reset any download, the sale will auto unlock (if it was locked), so you don`t need to unlock the sale separately. However, if you have the "Lock Sales Page if More Than XX Download IP Addresses are Detected" option
+                        enabled in the <a href="ad-settings.html">settings</a>, you must also delete the history to prevent the sale re-locking when the download is clicked.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Items (Download) - Remove Download Items From Sale</div>
+                        <div class="panel-body">To remove downloadable items, check the relevant boxes for any item in the "Remove/Reset" column. When you
+                        update the sale via the "Update Sale" button, the item will be removed. Clicking the "Remove/Reset" column header will toggle all boxes.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Items (CD) - Remove Items From Sale</div>
+                        <div class="panel-body">To remove CD items, check the relevant boxes for any item in the "Remove/Reset" column. When you
+                        update the sale via the "Update Sale" button, the item will be removed. Clicking the "Remove/Reset" column header will toggle all boxes.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row footerArea">
+			</div>
+        </div>
+
+</div>
+
+<script>
+//<![CDATA[
+jQuery(document).ready(function() {
+  loadTopMenu();
+  loadLeftMenu();
+  loadFooter();
+});
+//]]>
+</script>
+
+<script src="templates/js/bootstrap.js"></script>
+<script src="templates/js/plugins/jquery.metismenu.js"></script>
+<script src="templates/js/plugins/jquery.ibox.js"></script>
+
+</body>
+</html>

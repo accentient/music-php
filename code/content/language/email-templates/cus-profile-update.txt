@@ -1,0 +1,11 @@
+Hi {NAME},
+
+This email confirms your recent profile update at "{WEBSITE}".
+
+IMPORTANT!. If you did not authorise this update, please contact us immediately.
+
+Kind regards,
+
+-----------------------
+{WEBSITE}
+{WEBSITE_URL}

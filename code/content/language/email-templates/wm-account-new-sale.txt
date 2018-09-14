@@ -1,0 +1,36 @@
+New Order Completed
+-------------------
+
+An order has been completed by "{ACC_NAME}":
+
+--------------------------
+{C1} DIGITAL DOWNLOAD(S)
+--------------------------
+
+{DOWNLOADS}
+
+--------------------------
+{C2} CD(S)
+--------------------------
+
+{CDS}
+
+--------------------------
+
+Sub Total: {SUB}
+Shipping: {SHIP}
+Tangible Goods Tax on {TCOUNT} item(s) and Shipping (if applicable) @ {RATE}%: {TAX}
+Digital Goods Tax on {DCOUNT} item(s) @ {RATE2}%: {TAX2}
+Order Total: {TOTAL}
+
+Prices in {CURRENCY}
+
+--------------------------
+
+If this order contains items to be shipped, the shipping address is:
+
+{SHIP_ADDR}
+
+To edit or manage this order, log into your administration area:
+
+{WEBSITE_URL}{ADMIN_FOLDER}

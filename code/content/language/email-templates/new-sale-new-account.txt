@@ -1,0 +1,46 @@
+Hello {NAME},
+
+An account and sale has been created for you at "{WEBSITE}":
+
+--------------------------
+{C1} DIGITAL DOWNLOAD(S)
+--------------------------
+
+{DOWNLOADS}
+
+--------------------------
+{C2} CD(S)
+--------------------------
+
+{CDS}
+
+--------------------------
+
+Sub Total: {SUB}
+Shipping: {SHIP}
+Tangible Goods Tax on {TCOUNT} item(s) and Shipping (if applicable) @ {RATE}%: {TAX}
+Digital Goods Tax on {DCOUNT} item(s) @ {RATE2}%: {TAX2}
+Order Total: {TOTAL}
+
+Prices in {CURRENCY}
+
+--------------------------
+
+If you have downloadable items in your order, please log into your account to download:
+Email: {EMAIL}
+Password: {PASS}
+{WEBSITE_URL}
+
+(Note, you should update your password to something you can remember as soon as possible for security)
+
+If you have any tangible CDs in your order, they will be despatched shortly to the following address:
+
+{SHIP_ADDR}
+
+Any problems, please let us know.
+
+Kind regards,
+
+--------------------------------------------
+{WEBSITE}
+{WEBSITE_URL}

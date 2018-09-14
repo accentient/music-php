@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Statistics: Documentation</title>
+
+    <link href="templates/css/bootstrap.css" rel="stylesheet">
+    <link href="templates/css/font-awesome/font-awesome.css" rel="stylesheet">
+	<link href="templates/css/mm-docs.css" rel="stylesheet">
+
+	<script src="templates/js/jquery.js"></script>
+	<script src="templates/js/functions.js"></script>
+
+	<link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Documentation</a>
+            </div>
+
+			<div class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+				</div>
+            </div>
+		</nav>
+
+        <div id="page-wrapper">
+                        <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Statistics</h1>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Overview</div>
+                        <div class="panel-body">Gives you a statistical overview of sales.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Default Settings</div>
+                        <div class="panel-body">To manage the default settings click the <button type="button" class="btn btn-success btn-sm"><i class="fa fa-cog fa-fw"></i></button> button. In the default
+                        settings, the following are available:<br><br>
+                        Default Years for Comparison (Comma Delimit) - Enter 2 years, comma delimited.<br>
+                        Default Display for Best Sellers - Numeric option. You can edit the options in the 'content/language/admin.php' language file.<br>
+                        Default Display for Month Filters - Default of this month or last month.<br>
+                        Legacy Duration for Month Filters - For reload drop down. Defaults to 12 months back.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Yearly Sales Comparison </div>
+                        <div class="panel-body">Displays a sales overview of 2 years. Defaults to current year and last year. Click the "Select Years" button
+                        to re-select the years if applicable. Click the button again to toggle and close. See the following screenshot:<br><br>
+                        <img class="img-responsive" src="templates/images/screenshots/9.jpg" alt="" title=""><br>
+                        Hover your cursor over the data points to see the values. See the following screenshot:<br><br>
+                        <img class="img-responsive" src="templates/images/screenshots/10.jpg" alt="" title=""><br>
+                        Note that a sale is a single purchase. So if you sell 10 items in a single sale, that is 1 sale.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Monthly Sales </div>
+                        <div class="panel-body">Displays a sales overview of monthly sales. Click the "Reload" button to select a different month. Hover your cursor over the data bars to see the values. See the following screenshot:<br><br>
+                        <img class="img-responsive" src="templates/images/screenshots/11.jpg" alt="" title=""></div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Monthly Revenue Overview </div>
+                        <div class="panel-body">Displays a revenue overview of monthly sales. Click the "Reload" button to select a different month. Note that
+                        sale revenue is based on sub totals and doesn`t include shipping or tax costs etc. So the total of goods before additions/subtractions. Hover your cursor over the data bars to see the values. See above screenshot.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Best Selling Collections </div>
+                        <div class="panel-body">Displays a list of the best selling collections. Number shown is the amount of collections sold, this includes CDs. Click the "Reload" button to select a different amount to display.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Best Selling Tracks</div>
+                        <div class="panel-body">Displays a list of the best selling tracks. Number shown is the amount of tracks sold. Click the "Reload" button to select a different amount to display.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Sales By Country </div>
+                        <div class="panel-body">Displays sales totals by country. A sale is one unit, regardles of items purchased. Note that this function won`t display if the GeoIp functions are disabled
+                        in the <a href="ad-settings.html">settings</a> as this feature will not work or be accurate.<br><br>
+                        A threshold groups countries that are less than 3%, these will be shown as "other". If you wish to increase or remove this threshold edit
+                        the "admin/templates/js/mm-stats.js" file and line 50:<br><br>
+                        <div class="alert alert-info">
+                        threshold: 0.03
+                        </div>
+                        Value can be 0 to 1. The "combine" parameter can be removed completely if required. Further reference can be found <a href="http://www.flotcharts.org/flot/examples/series-pie/index.html" onclick="window.open(this);return false">here</a>.<br><br>
+                        If you cannot read the countries because of the colour, hover your cursor for a better readable reference. Example:<br><br>
+                        <img class="img-responsive" src="templates/images/screenshots/12.jpg" alt="" title=""><br>
+                        You can also refer to the labels on the right hand side.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Sales By Gateway </div>
+                        <div class="panel-body">Displays sales totals by payment gateway. A sale is one unit, regardles of items purchased.<br><br>
+                        A threshold groups gateways that are less than 3%, these will be shown as "other". If you wish to increase or remove this threshold edit
+                        the "admin/templates/js/mm-stats.js" file and line 18:<br><br>
+                        <div class="alert alert-info">
+                        threshold: 0.03
+                        </div>
+                        Value can be 0 to 1. The "combine" parameter can be removed completely if required. Further reference can be found <a href="http://www.flotcharts.org/flot/examples/series-pie/index.html" onclick="window.open(this);return false">here</a>.<br><br>
+                        If you cannot read the gateways because of the colour, hover your cursor for a better readable reference. See countries example above.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Flot</div>
+                        <div class="panel-body">Graphs are powered by <a href="http://www.flotcharts.org" title="IOLA &amp; Ole Laursen" onclick="window.open(this);return false">Flot</a>, a pure JavaScript plotting library for jQuery.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row footerArea">
+			</div>
+        </div>
+
+</div>
+
+<script>
+//<![CDATA[
+jQuery(document).ready(function() {
+  loadTopMenu();
+  loadLeftMenu();
+  loadFooter();
+});
+//]]>
+</script>
+
+<script src="templates/js/bootstrap.js"></script>
+<script src="templates/js/plugins/jquery.metismenu.js"></script>
+<script src="templates/js/plugins/jquery.ibox.js"></script>
+
+</body>
+</html>

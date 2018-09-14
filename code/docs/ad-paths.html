@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Check Paths: Documentation</title>
+
+    <link href="templates/css/bootstrap.css" rel="stylesheet">
+    <link href="templates/css/font-awesome/font-awesome.css" rel="stylesheet">
+	<link href="templates/css/mm-docs.css" rel="stylesheet">
+
+	<script src="templates/js/jquery.js"></script>
+	<script src="templates/js/functions.js"></script>
+
+	<link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Documentation</a>
+            </div>
+
+			<div class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+				</div>
+            </div>
+		</nav>
+
+        <div id="page-wrapper">
+                        <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Check Paths</h1>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Overview</div>
+						<div class="panel-body">Here you can check your music files and cover images exist in the system in the specified directories.<br><br><b class="no-font-weight mm_red">IMPORTANT! If the system reports ALL files are missing, your paths may be wrong in the <a href="ad-settings.html">settings</a> OR it may be a case issue. For example .JPG and .jpg are NOT the same and would
+            cause issues on Linux servers.</b></div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Check Paths</div>
+						<div class="panel-body">To check paths, simply click the <button type="button" class="btn btn-primary btn-sm"><i class="fa fa-refresh fa-fw"></i> Check ALL Paths</button> button.<br><br>
+            The following will be checked:<br><br>
+            <i class="fa fa-angle-right fa-fw"></i> MP3 File Path<br>
+            <i class="fa fa-angle-right fa-fw"></i> Preview MP3 File Path<br>
+            <i class="fa fa-angle-right fa-fw"></i> Cover Art Path<br><br>
+            <i class="fa fa-times fa-fw"></i> Collections with no cover art will not be reported as missing!<br>
+            <i class="fa fa-times fa-fw"></i> Music tracks with no mp3 preview file will not be reported as missing!<br>
+            <i class="fa fa-check fa-fw"></i> Music tracks with no mp3 file WILL be reported as missing!<br><br>
+            A limit of <b>200</b> entries for each section is default. This is to prevent everything from being reported as missing if, for example, you change the base folder names by
+            mistake. If you wish to increase the limit change the 'PATH_CHECK_LIMIT' value in the 'control/defined.php' file.
+            </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Edit/Delete</div>
+                        <div class="panel-body">To edit a track or collection, click the <i class="fa fa-pencil fa-fw mm_blue"></i> icon. To delete, click the <i class="fa fa-times fa-fw mm_red"></i> icon.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row footerArea">
+			</div>
+        </div>
+
+</div>
+
+<script>
+//<![CDATA[
+jQuery(document).ready(function() {
+  loadTopMenu();
+  loadLeftMenu();
+  loadFooter();
+});
+//]]>
+</script>
+
+<script src="templates/js/bootstrap.js"></script>
+<script src="templates/js/plugins/jquery.metismenu.js"></script>
+<script src="templates/js/plugins/jquery.ibox.js"></script>
+
+</body>
+</html>

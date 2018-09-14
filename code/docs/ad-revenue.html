@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Revenue Overview: Documentation</title>
+
+    <link href="templates/css/bootstrap.css" rel="stylesheet">
+    <link href="templates/css/font-awesome/font-awesome.css" rel="stylesheet">
+	<link href="templates/css/mm-docs.css" rel="stylesheet">
+
+	<script src="templates/js/jquery.js"></script>
+	<script src="templates/js/functions.js"></script>
+
+	<link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Documentation</a>
+            </div>
+
+			<div class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+				</div>
+            </div>
+		</nav>
+
+        <div id="page-wrapper">
+                        <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Revenue Overview</h1>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Overview</div>
+						<div class="panel-body">At a glance view of revenue for a given year with options to filter by year, tax type and country. Useful for tax returns. Result view can be exported to CSV.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Search</div>
+						<div class="panel-body">To search and change the revenue display click the <button type="button" class="btn btn-default btn-sm"><i class="fa fa-search fa-fw"></i></button> button. This
+						opens the search panel.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Search - Enter Year (4 Digits)</div>
+						<div class="panel-body">Enter 4 digit year, ie: 2015, 2016 etc. Defaults to current year.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Search - Tax Country</div>
+						<div class="panel-body">Filter by tax country</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Search - Country Tax Preference</div>
+						<div class="panel-body">If filtering by tax country, this option lets you drill down to a specific tax revenue for that country. 'Tangible' would show ONLY
+            sales revenue where the tangible tax country was the filter country and 'digital' would show the same for digital.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Export View to CSV</div>
+						<div class="panel-body">Click button to export current view to CSV</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row footerArea">
+			</div>
+        </div>
+
+</div>
+
+<script>
+//<![CDATA[
+jQuery(document).ready(function() {
+  loadTopMenu();
+  loadLeftMenu();
+  loadFooter();
+});
+//]]>
+</script>
+
+<script src="templates/js/bootstrap.js"></script>
+<script src="templates/js/plugins/jquery.metismenu.js"></script>
+<script src="templates/js/plugins/jquery.ibox.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+----------------------
+Upgrade Instructions
+----------------------
+
+To upgrade to the latest version from 2.0 or later download the patch update and follow the instructions:
+
+http://www.maianmusic.com/download/patch/latest-version.zip

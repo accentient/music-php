@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Styles: Documentation</title>
+
+    <link href="templates/css/bootstrap.css" rel="stylesheet">
+    <link href="templates/css/font-awesome/font-awesome.css" rel="stylesheet">
+	<link href="templates/css/mm-docs.css" rel="stylesheet">
+
+	<script src="templates/js/jquery.js"></script>
+	<script src="templates/js/functions.js"></script>
+
+	<link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Documentation</a>
+            </div>
+
+			<div class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+				</div>
+            </div>
+		</nav>
+
+        <div id="page-wrapper">
+                        <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Music Styles</h1>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Overview</div>
+                        <div class="panel-body">Lets you create music styles. Collections are grouped into styles for easy browsing. Styles can be top level or sub style.<br><br>
+                        <b class="mm_red no-font-weight">NOTE: Collections cannot be added to styles that contain sub styles, in this case the collection count will show as N/A. If you have collections in top level styles that have sub styles
+                        you need to move the collections to one of the sub styles. When a top level style has sub styles, the top level acts as just a placeholder. In the menu
+                        when clicked, it will display the sub styles.</b></div>
+					</div>
+				</div>
+			</div>
+
+                  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Add New Styles</div>
+                        <div class="panel-body">To add new styles click the <button type="button" class="btn btn-primary btn-sm"><i class="fa fa-plus fa-fw"></i></button> button.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Search Styles</div>
+                        <div class="panel-body">To search styles click the <button type="button" class="btn btn-default btn-sm"><i class="fa fa-search fa-fw"></i></button> button. This
+						opens the search panel.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Filter Styles</div>
+                        <div class="panel-body">To filter styles click the <button type="button" class="btn btn-default btn-sm"><i class="fa fa-filter fa-fw"></i></button> button.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">View Sub Styles/Edit/Delete</div>
+                        <div class="panel-body">To view sub styles (if applicable), click the <i class="fa fa-list-ul fa-fw mm_blue"></i> icon. To edit a style click the <i class="fa fa-pencil fa-fw mm_blue"></i> icon. To delete, click the <i class="fa fa-times fa-fw mm_red"></i> icon.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Style Position - Drag/Drog</div>
+                        <div class="panel-body">To change the style order, drag and drop the rows.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row footerArea">
+			</div>
+        </div>
+
+</div>
+
+<script>
+//<![CDATA[
+jQuery(document).ready(function() {
+  loadTopMenu();
+  loadLeftMenu();
+  loadFooter();
+});
+//]]>
+</script>
+
+<script src="templates/js/bootstrap.js"></script>
+<script src="templates/js/plugins/jquery.metismenu.js"></script>
+<script src="templates/js/plugins/jquery.ibox.js"></script>
+
+</body>
+</html>

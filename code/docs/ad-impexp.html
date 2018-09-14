@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Import / Export: Documentation</title>
+
+    <link href="templates/css/bootstrap.css" rel="stylesheet">
+    <link href="templates/css/font-awesome/font-awesome.css" rel="stylesheet">
+	<link href="templates/css/mm-docs.css" rel="stylesheet">
+
+	<script src="templates/js/jquery.js"></script>
+	<script src="templates/js/functions.js"></script>
+
+	<link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Documentation</a>
+            </div>
+
+			<div class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+				</div>
+            </div>
+		</nav>
+
+        <div id="page-wrapper">
+                        <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Import / Export</h1>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Overview</div>
+                        <div class="panel-body">Enables quick importing of collections and tracks. Useful if you have a large catalogue and are exporting from other software. Before importing
+                        your CSV MUST meet the required criteria. Invalid data may cause the import to fail. Please see below for expected columns and example files.<br><br>
+                        <b class="mm_red no-font-weight">
+                        NOTE: Very large import files may time out. It is recommended you break up large files into smaller chunks if your files contain more than 5000 rows. There are a number of free utilities
+                        online for splitting CSV files. If you find that your import hangs, try smaller files.
+                        </b>
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Import Collections</div>
+                        <div class="panel-body">Your CSV doesn`t need to contain a header line. All rows are read, so including an header line could cause the import to fail. The CSV
+                        MUST contain the following columns of data in the order they are shown. Data separator MUST be a comma and the field enclosure / escape character is always a double quote. All data can be
+                        edited after the import.<br><br>The collection import expects <b>15</b> columns:<br><br>
+                        <div class="alert alert-info">
+                        name of collection (max 250 chars)<br>
+                        title to appear in browser if applicable<br>
+                        meta keyword if applicable<br>
+                        meta description if applicable<br>
+                        rewrite url slug value if appliable (max 50 chars)<br>
+                        information about collection<br>
+                        search tags (comma delimited)<br>
+                        cover art path relative to cover art folder<br>
+                        hit counter (numeric value, max 10. set to 0 if start count is 0)<br>
+                        release date (numeric timestamp ONLY or 0)<br>
+                        catalogue number if applicable (max 200 chars)<br>
+                        cost of download (max 10 chars)<br>
+                        cost of cd (max 10 chars)<br>
+                        total length of collection (max 10 chars)<br>
+                        average bitrate of collection (max 100 chars)
+                        </div>
+                        <b>Locate CSV</b> = Use this to locate your CSV file.<br>
+                        <b>Music Styles</b> = Choose styles applicable to import<br>
+                        <b>Clear ALL Existing Collections</b> = If checked, all current collections are cleared before the import<br><br>
+                        <a href="templates/files/example-collections.csv"><i class="fa fa-download fa-fw"></i> View Example CSV File</a></div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Import Music Tracks </div>
+                        <div class="panel-body">Your CSV doesn`t need to contain a header line. All rows are read, so including an header line could cause the import to fail. The CSV
+                        MUST contain the following columns of data in the order they are shown. Data separator MUST be a comma and the field enclosure / escape character is always a double quote. All data can be
+                        edited after the import.<br><br>The track import expects <b>8</b> columns:<br><br>
+                        <div class="alert alert-info">
+                        title of music file (max 250 chars)<br>
+                        mp3 file path relevant to secure folder<br>
+                        preview mp3 file relative to the preview folder<br>
+                        length of track (max 10 chars)<br>
+                        bitrate (max 100 chars)<br>
+                        sample rate (max 100 chars)<br>
+                        cost of track (max 10 chars)<br>
+                        order (numeric value of order preference. if setting later, set this as 0)
+                        </div>
+                        <b>Locate CSV</b> = Use this to locate your CSV file.<br>
+                        <b>Choose Collection</b> = Choose collection applicable to import<br>
+                        <b>Clear Existing Tracks for Collection</b> = If checked, all current tracks are cleared for the selected collection before the import<br><br>
+                        <a href="templates/files/example-tracks.csv"><i class="fa fa-download fa-fw"></i> View Example CSV File</a>
+                        </div>
+					</div>
+				</div>
+			</div>
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Export Options </div>
+                        <div class="panel-body">Exports data to CSV. All data from database is exported, with the exception of the ID column. The export will
+                        ONLY re-import if the file meets the above criteria. All data is included for export into other applications, so not necessarily back
+                        into Maian Music.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row footerArea">
+			</div>
+        </div>
+
+</div>
+
+<script>
+//<![CDATA[
+jQuery(document).ready(function() {
+  loadTopMenu();
+  loadLeftMenu();
+  loadFooter();
+});
+//]]>
+</script>
+
+<script src="templates/js/bootstrap.js"></script>
+<script src="templates/js/plugins/jquery.metismenu.js"></script>
+<script src="templates/js/plugins/jquery.ibox.js"></script>
+
+</body>
+</html>

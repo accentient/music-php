@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add New Gateway: Documentation</title>
+
+    <link href="templates/css/bootstrap.css" rel="stylesheet">
+    <link href="templates/css/font-awesome/font-awesome.css" rel="stylesheet">
+	<link href="templates/css/mm-docs.css" rel="stylesheet">
+
+	<script src="templates/js/jquery.js"></script>
+	<script src="templates/js/functions.js"></script>
+
+	<link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Documentation</a>
+            </div>
+
+			<div class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+				</div>
+            </div>
+		</nav>
+
+        <div id="page-wrapper">
+                        <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Add New Gateway</h1>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Overview</div>
+                        <div class="panel-body">Enables the adding of new payment gateway. Note that this feature is experimental and ONLY for advanced users. You
+                        will require an advanced knowledge of PHP (as custom programming is needed) and the payment gateway API to continue. For a payment gateway to work it must support the <a href="http://en.wikipedia.org/wiki/Payment_gateway" onclick="window.open(this);return false">hosted method</a>
+                        and have a callback API that uses POST or GET. If you aren`t sure of this, ask your payment provider. If nothing makes sense below, you will need assistance.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Gateway Name</div>
+                        <div class="panel-body">Display name for gateway. Max 100 chars.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Live Payment Server POST Url</div>
+                        <div class="panel-body">This is the live server POST url as determined by the gateway. This url accepts the POST parameters from the music system.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Sandbox Payment Server POST Url</div>
+                        <div class="panel-body">This is the sandbox callback url as determined by the gateway if applicable. Can be used for other operations if necessary.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Website</div>
+                        <div class="panel-body">Webpage for gateway.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Enabled</div>
+                        <div class="panel-body">Yes to enable, No to disable</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Class to Load</div>
+                        <div class="panel-body">Each gateway has 2 files, these must be named and exist as follows ("gateway" should be a unique identifier):<br><br>
+						<div class="alert alert-info">
+						callback/gateway.php<br>
+						control/classes/gateways/class.gateway.php
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Display Image</div>
+                        <div class="panel-body">For cosmetics only, should exist in the following locations:<br><br>
+                        <div class="alert alert-info">
+                        admin/templates/images/gateways/<br>
+                        content/**THEME**/images/gateways/
+                        </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Parameters</div>
+                        <div class="panel-body">Key/Value pairs that can contain data to be sent to the gateway or used to validate a response from the
+						gateway. By default no parameters are used unless created in the relevant class files. You can add more parameters if you want to
+						pass additional info to the gateway.<br><br>
+Note that the values must be entered on the right, the left values are the parameter names and MUST not be changed.<br><br>Depending on the getway, parameter names are sent as either $_POST or $_GET values.<br><br>
+						To add new parameter click the <button type="button" class="btn btn-success btn-sm"><i class="fa fa-plus fa-fw"></i></button> button, to remove the last parameter
+						click the <button type="button" class="btn btn-success btn-sm"><i class="fa fa-minus fa-fw"></i></button> button.<br><br>
+            <b class="mm_red no-font-weight">Note that if you prefer the values to be hidden, enable the "Always Hide Gateway Parameter Values" in your <a href="ad-settings.html">settings</a> via the Payment tab.</b>
+            </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Setup - Class File</div>
+                        <div class="panel-body">Firstly, make a copy of 'control/classes/gateways/class.new.php' and rename it to something else. Save in same folder. You can refer to
+                        any other payment gateway file for reference.<br><br>
+                        This class has 4 functions:<br><br>
+                        <div class="alert alert-info">
+                        validate() = Validates successful postback. Returns 'ok' or 'err'.<br><br>
+                        callback() = Assigns callback parameters to standard variables.<br><br>
+                        fields() = Assigns the POST data to send TO the payment gateway.<br><br>
+                        mailtemplates() = The preferred mail templates for this gateway. You can leave this as it is.
+                        </div>
+                        <span class="badge">1</span> <b style="text-decoration:underline">Sending POST Data to Payment Gateway</b><br><br>
+                        This is done via the 'fields()' function. Refer to the payment gateway API to see what post vars should be sent. Add key => value pairs, the key
+                        being the post field name, the value is the field value. The gateway must support a custom field, where you can send any data and this field MUST contain
+                        the buy code, sale id and 'mswmusic' value separated with a dash. See file for reference.<br><br>
+                        To get any data from the sale or from gateway parameters created in admin, you can use the following:<br><br>
+                        <div class="alert alert-info">
+                         &#036;order   =  &#036;this->getsale(&#036;this->order['id'],&#036;this->order['code']);<br>
+                         print_r(&#036;order);<br><br>
+                         &#036;params  =  &#036;this->params();<br>
+                         print_r(&#036;params);<br><br>
+                         The <b>&#036;this->order['id']</b> &amp; <b>&#036;this->order['code']</b> vars are created at runtime and contain the buycode and sale ID respectively.<br><br>
+                         Parameters will be key => value pairs as created in admin, so if you created a var called 'name' and its value was 'joe bloggs', you would us the following to reference the value:<br><br>
+                         &#036;params['name'];
+                        </div>
+                        <span class="badge">2</span> <b style="text-decoration:underline">Validating Payment from Payment Gateway</b><br><br>
+                        After a payment has occurred you need to verify it was valid, this is done via the 'validate()' and 'callback()' functions.<br><br>
+                        First you should assign the POST vars returned for further processing in the 'callback()' function. The field that held the custom data
+                        MUST be assigned to the 'code-id' parameter in the 'callback()' function. Only 'trans-id,amount,currency,pay-status &amp; code-id' are required values, the rest ONLY if you are
+                        doing further processing afterwards in the processing file (see below)<br><br>
+                        It is <b>important</b> the 'pay-status' value is one of the following:<br><br>
+                        <div class="alert alert-info">
+                        completed = completed payment<br><br>
+                        refund = refunded payment<br><br>
+                        pending = pending payment
+                        </div>
+                        Not all gateways support refunded and pending payments.<br><br>
+                        The 'validate()' function determines if the sale was valid and you should refer to the payment gateway API to see how they require validation
+                        to be done. Payment gateways vary. You should add your own code. You may use the above functions to get any sale or parameter data.<br><br>
+                        Note that this function should ONLY return one of the following values:<br><br>
+                        <div class="alert alert-info">
+                        ok = valid payment<br>
+                        err = invalid payment
+                        </div>
+                        Please refer to other payment gateway files for reference and to see how data is assigned. Not all gateways behave in the same way and you`ll
+                        see differing code in many of the gateway files. Some only require the 'validate()' function to return 'ok' because validation is confirmed elsewhere.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Setup - Processing File</div>
+                        <div class="panel-body">Firstly, make a copy of 'callback/new.php' and rename it to something else. Save in same folder. You can refer to
+                        any other payment gateway file for reference.<br><br>
+                        The processing file completes all operations, such as updating sale in database, sending emails and performing custom operations. It relies on
+                        the data assigned in the 'callback()' function. Unless you need to do some custom tweaks, this file shouldn`t need changing.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Custom Callback Operations</div>
+                        <div class="panel-body">If you are using 3rd party software you may need to perform other actions after a successful payment. You
+                        can add custom code in the following file:<br><br>
+                        <div class="alert alert-info">
+                        callback/ops/custom.php
+                        </div>
+                        Refer to the notes in that file for reference.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Feedback</div>
+                        <div class="panel-body">If you have implemented an additional gateway, let me know how you got on with the instructions. They aren`t
+                        too detailed, but for an advanced programmer they should highlight the changes required.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row footerArea">
+			</div>
+        </div>
+
+</div>
+
+<script>
+//<![CDATA[
+jQuery(document).ready(function() {
+  loadTopMenu();
+  loadLeftMenu();
+  loadFooter();
+});
+//]]>
+</script>
+
+<script src="templates/js/bootstrap.js"></script>
+<script src="templates/js/plugins/jquery.metismenu.js"></script>
+<script src="templates/js/plugins/jquery.ibox.js"></script>
+
+</body>
+</html>

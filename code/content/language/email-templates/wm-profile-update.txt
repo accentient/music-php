@@ -1,0 +1,13 @@
+This email confirms a profile update by the following customer:
+
+Name: {NAME}
+Email: {EMAIL}
+IP: {IP}
+
+You can disable this notification in your administration settings:
+
+Settings > Accounts
+
+To edit this account, log into your administration area:
+
+{WEBSITE_URL}{ADMIN_FOLDER}

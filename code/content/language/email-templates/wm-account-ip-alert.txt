@@ -1,0 +1,20 @@
+You are receiving this email because you have the following admin option enabled at "{WEBSITE}":
+
+"Send Admin Alert Email if More Than XX Login IP Addresses are Detected (Per Account)"
+
+Your limit is: {LIMIT}
+
+The account from "{NAME}" has now been accessed from the following IP addresses:
+
+Click Report:
+-------------
+
+{REPORT}
+
+Entries from different IPs in different countries should be treated as suspicious.
+
+You can disable this option in your administration settings:
+
+Settings > Other > Accounts
+
+You should also delete the login history for this account to prevent the message from triggering again.

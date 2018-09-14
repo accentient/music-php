@@ -1,0 +1,16 @@
+Hello {NAME},
+
+An account has been created for you at "{WEBSITE}".
+
+Your log in details are as follows:
+
+User: {USER}
+Pass: {PASS}
+{WEBSITE_URL}
+
+Kind regards,
+
+-----------------------
+{WEBSITE}
+
+(Note: You should change your account password to something you can remember)

@@ -1,0 +1,30 @@
+# -------------------------
+# MAIAN MUSIC HTACCESS FILE  
+# -------------------------
+
+Options +FollowSymLinks
+
+# Prevent directory browsing and access to certain file types
+# --------------------------------------------------------------
+
+<Files .htaccess>
+ order allow,deny
+ deny from all
+</Files>
+
+<FilesMatch "\.(tpl|log)">
+ order deny,allow
+ deny from all
+</FilesMatch>
+
+Options All -Indexes
+
+# Rewrite rules. If you get a 404 you may need to uncomment the rewritebase rule
+# ----------------------------------------------------------------------------------
+
+RewriteEngine On
+#RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !.*\.(ico|gif|jpg|jpeg|png|js|css)
+RewriteRule ^([^?]*) index.php?_mm_=$1 [L,QSA]

@@ -1,0 +1,30 @@
+Tax calculations on Tangible and Digital goods may differ, depending on your country of residence and whether you reside in the E.U (European Union) or not.
+
+If you reside in the E.U, tax on digital goods (downloads) is calculated based on your country of residence.
+
+The tax calculations for this order are as follows:
+
+<i class="fa fa-truck fa-fw"></i> <b>TANGIBLE GOODS</b> (Includes shipping)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Total Items / Amount: {ITEMS} @ {TOTAL}
+Coupon: -{COUPON}
+Shipping: {SHIPPING}
+Tax Country: {COUNTRY}
+Tax Rate: {RATE}%
+Tax Amount: {AMOUNT}
+
+<i class="fa fa-download fa-fw"></i> <b>DIGITAL GOODS</b>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Total Items / Amount: {ITEMS2} @ {TOTAL2}
+Coupon: -{COUPON2}
+Tax Country: {COUNTRY2}
+Tax Rate: {RATE2}%
+Tax Amount: {AMOUNT2}
+
+<i class="fa fa-money fa-fw"></i> <b>TOTAL TAX FOR THIS ORDER</b>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+<span style="font-size:22px">{TOTAL-TAX}</span>
+

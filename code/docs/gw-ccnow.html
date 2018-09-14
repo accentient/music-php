@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gateway: CCNow: Documentation</title>
+
+    <link href="templates/css/bootstrap.css" rel="stylesheet">
+    <link href="templates/css/font-awesome/font-awesome.css" rel="stylesheet">
+	<link href="templates/css/mm-docs.css" rel="stylesheet">
+
+	<script src="templates/js/jquery.js"></script>
+	<script src="templates/js/functions.js"></script>
+
+	<link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Documentation</a>
+            </div>
+
+			<div class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+				</div>
+            </div>
+		</nav>
+
+        <div id="page-wrapper">
+                        <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">
+					<span style="float:right">
+					 <button type="button" class="btn btn-primary btn-sm" onclick="iBox.showURL('gateways/setup-ccnow.html','Gateway Setup Instructions - Please Read Carefully',{width:700,height:500});return false"><i class="fa fa-gears fa-fw"></i> SETUP INSTRUCTIONS</button>
+					</span>
+					Gateway: CCNow</h1>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Gateway Name</div>
+                        <div class="panel-body">Display name for gateway. Max 100 chars.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Live Payment Server POST Url</div>
+                        <div class="panel-body">This is the live server POST url as determined by the gateway. This url accepts the POST parameters from the music system.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Sandbox Payment Server POST Url</div>
+                        <div class="panel-body">This is the sandbox POST url as determined by the gateway if applicable. Can be used for other operations if adding custom gateway.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Website</div>
+                        <div class="panel-body">Webpage for gateway.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Enabled</div>
+                        <div class="panel-body">Yes to enable, No to disable</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Class to Load</div>
+                        <div class="panel-body">Each gateway has files, these must be named and exist as follows ("gateway" should be a unique identifier):<br><br>
+						<div class="alert alert-info">
+						callback/gateway.php<br>
+						control/classes/gateways/class.gateway.php
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Display Image</div>
+                        <div class="panel-body">For cosmetics only, should exist in the following locations:<br><br>
+                        <div class="alert alert-info">
+                        admin/templates/images/gateways/<br>
+                        content/**THEME**/images/gateways/
+                        </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Parameters</div>
+                        <div class="panel-body">Key/Value pairs that can contain data to be sent to the gateway or used to validate a response from the
+						gateway. By default no parameters are used unless created in the relevant class files. You can add more parameters if you want to
+						pass additional info to the gateway.<br><br>
+Note that the values must be entered on the right, the left values are the parameter names and MUST not be changed.<br><br>Depending on the getway, parameter names are sent as either $_POST or $_GET values.<br><br>
+						To add new parameter click the <button type="button" class="btn btn-success btn-sm"><i class="fa fa-plus fa-fw"></i></button> button, to remove the last parameter
+						click the <button type="button" class="btn btn-success btn-sm"><i class="fa fa-minus fa-fw"></i></button> button.<br><br>
+						Note that nothing is actually updated until the "Update Gateway" is clicked. More info on parameters on the <a href="ad-new-gateway.html">add gateway</a> example page.<br><br>
+<b class="mm_red no-font-weight">Note that if you prefer the values to be hidden, enable the "Always Hide Gateway Parameter Values" in your <a href="ad-settings.html">settings</a> via the Payment tab.</b>
+						</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Default Parameters</div>
+                        <div class="panel-body">The following parameters should be set as defaults, ie: The values below appear in the left (key) boxes, your own values
+                        in the right boxes. They are included when the system is installed, you just need to fill in the values:<br><br>
+                        <div class="alert alert-info">
+                        secret-key, login-id &amp; activation-key
+                        </div>
+                        These values are case sensitive! They must be entered EXACTLY as shown.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Integration Instructions</div>
+                        <div class="panel-body">Click the button above for details on how to set up the gateway.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row footerArea">
+			</div>
+        </div>
+
+</div>
+
+<script>
+//<![CDATA[
+jQuery(document).ready(function() {
+  loadTopMenu();
+  loadLeftMenu();
+  loadFooter();
+});
+//]]>
+</script>
+
+<script src="templates/js/bootstrap.js"></script>
+<script src="templates/js/plugins/jquery.metismenu.js"></script>
+<script src="templates/js/plugins/jquery.ibox.js"></script>
+
+</body>
+</html>

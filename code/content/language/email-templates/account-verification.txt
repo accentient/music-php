@@ -1,0 +1,18 @@
+Hi {NAME},
+
+Thank you for signing up for an account at "{WEBSITE}".
+
+Before you can log in, you must verify your account.
+
+Please click the following to complete registration:
+{WEBSITE_URL}?ve={CODE}
+
+Note that if you have recently completed a payment, your account will automatically be verified and you can ignore this email.
+
+If you did NOT sign up for an account, please disregard this email.
+
+Kind regards,
+
+-----------------------
+{WEBSITE}
+{WEBSITE_URL}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Install: Documentation</title>
+
+    <link href="templates/css/bootstrap.css" rel="stylesheet">
+    <link href="templates/css/font-awesome/font-awesome.css" rel="stylesheet">
+	<link href="templates/css/mm-docs.css" rel="stylesheet">
+
+	<script src="templates/js/jquery.js"></script>
+	<script src="templates/js/functions.js"></script>
+
+	<link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Documentation</a>
+            </div>
+
+			<div class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+				</div>
+            </div>
+		</nav>
+
+        <div id="page-wrapper">
+                        <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Install - Please Read Carefully</h1>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Server Requirements</div>
+
+      <div class="panel-body"><i class="fa fa-caret-right fa-fw"></i> PHP5.0 or higher (PHP5.3 required for Twitter API)<br>
+      <i class="fa fa-caret-right fa-fw"></i> 1 MySQL database to hold the script tables. MySQL5+ is recommended. This is set up on your web server.<br>
+      <i class="fa fa-caret-right fa-fw"></i> <a href="http://php.net/manual/en/book.mysqli.php" onclick="window.open(this);return false">MySQL Improved Extension (mysqli)</a> functions enabled on server for database connection.<br>
+	    <i class="fa fa-caret-right fa-fw"></i> <a href="http://www.php.net//manual/en/book.json.php" onclick="window.open(this);return false">JSON</a> functions enabled on server for ajax responses.<br>
+	    <i class="fa fa-caret-right fa-fw"></i> <a href="http://php.net/manual/en/book.mcrypt.php" onclick="window.open(this);return false">Mcrypt library</a> enabled for data encryption (not required for <a href="white.html">white label</a> licence).<br>
+      <i class="fa fa-caret-right fa-fw"></i> <a href="http://www.php.net/manual/en/class.ziparchive.php" onclick="window.open(this);return false">ZipArchive Class</a> enabled for consolidating collection purchases and cover art into single download.<br>
+      <i class="fa fa-caret-right fa-fw"></i> <a href="http://www.php.net/manual/en/book.curl.php" onclick="window.open(this);return false">CURL</a> functions enabled for software version check, payment gateways &amp; twitter api.<br>
+	    <i class="fa fa-caret-right fa-fw"></i> <a href="http://php.net/manual/en/book.simplexml.php" onclick="window.open(this);return false">Simple XML</a> functions enabled for some payment gateways.<br><br>
+	   The installer will check what functions are available.<br><br>
+     <b class="mm_red no-font-weight">It is also important you can upload files outside of your web root, this means one directory lower than your public_html or www folder. Files stores here are NOT
+     accessible on the web and cannot be found by <a href="http://en.wikipedia.org/wiki/Web_scraping" onclick="window.open(this);return false">web scrapers</a>. For security, files should be outside of your web root, not in the public domain. If you cannot protect your files, this script may be useless to you.</b><br><br>
+     <i class="fa fa-warning fa-fw"></i> Finally, a good <a href="http://en.wikipedia.org/wiki/Virtual_private_server" onclick="window.open(this);return false">VPS</a> or <a href="http://en.wikipedia.org/wiki/Dedicated_hosting_service" onclick="window.open(this);return false">Dedicated server</a> is recommended. For download sites, don`t expect too much reliability in a cheap shared server. Processing power is slow
+     and unreliable. This could impact your business and sales!
+	   </div>
+					</div>
+				</div>
+			</div>
+
+                  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><span class="badge">Step 1</span> Create MySQL Database</div>
+
+      <div class="panel-body">If you don`t have a database available, create one via your server control panel. Once a database is available, open the 'control/connect.php' file in
+      your text editor and update the connection parameters. Example:<br><br>
+      <div class="alert alert-info">
+      define('DB_HOST', 'localhost');<br>
+      define('DB_USER', 'joeblogs_admin');<br>
+      define('DB_PASS', '12345XX');<br>
+      define('DB_NAME', 'music');<br>
+      define('DB_PREFIX', 'mm_');<br>
+      define('DB_CHAR_SET', 'utf8');
+      </div>
+	  Also, in the 'control/connect.php' file set a secret key (or salt) value. This should be a combination of letters, numbers and/or special characters. sha1 and md5 may be used: Examples:<br><br>
+	  <div class="alert alert-info">
+	  define('SECRET_KEY', 'fd764%^]h9[-)[87fde');<br>
+      define('SECRET_KEY', md5('fd764%^]h9[-)[87fde'));<br>
+      define('SECRET_KEY', sha1('fd764%^]h9[-)[87fde'));
+	  </div>
+      </div>
+					</div>
+				</div>
+			</div>
+
+                  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><span class="badge">Step 2</span> Set Administration Password</div>
+
+      <div class="panel-body">Again, in your text editor, open the 'admin/control/access.php' file and enter an admin user/pass. Examples:<br><br>
+      <div class="alert alert-info">
+      define('MM_ADMIN_USER', 'admin');<br>
+      define('MM_ADMIN_PASS', 'admin');
+      </div>
+      You can also restrict the login to certain IP addresses ONLY for security. Enter one or more IP addresses separated with a comma. Useful only if you have a fixed IP address. Leave blank for no IP restriction. Examples:<br><br>
+      <div class="alert alert-info">
+      define('IP', '127.0.0.1');<br>
+      define('IP', '127.0.0.1,78.150.204.108');
+      </div>
+      Note that this is not a server IP restriction.
+	  </div>
+					</div>
+				</div>
+			</div>
+
+                  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><span class="badge">Step 3</span> FTP</div>
+
+      <div class="panel-body">Using a good FTP program such as <a href="http://filezilla-project.org/" onclick="window.open(this);return false">FileZilla</a>, <a href="http://winscp.net" onclick="window.open(this);return false" title="WinSCP">WinSCP</a> or <a href="http://cyberduck.ch/" onclick="window.open(this);return false" title="Cyber Duck">Cyberduck</a>, transfer the contents of the '<b>music-store</b>' folder to your web server. You may rename the folder
+      if you wish or have the files in your public html root not inside a folder. Examples:<br><br>
+      <div class="alert alert-info">
+			http://www.example.com/<br>
+      http://www.example.com/store/<br>
+      http://www.example.com/music/
+      </div>
+      </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><span class="badge">Step 4</span> Create MP3 Secure Directory</div>
+
+      <div class="panel-body">
+      You need to protect your MP3 files. For this you need a secure directory ONE directory lower than your public_html/htdocs/www folder.<br><br>
+      So, create a directory one directory lower with any name you like. So, if your structure looks like this:<br><br>
+      <div class="alert alert-info">
+      etc/<br>
+      public_ftp/<br>
+      public_html/<br>
+      tmp/
+      </div>
+      You should create your secure folder alongside these folders. Example:
+      <br><br>
+      <div class="alert alert-info">
+      etc/<br>
+      public_ftp/<br>
+      public_html/<br>
+      <b>secure</b>/<br>
+      tmp/
+      </div>
+      Make sure you specify the correct path to this folder in the admin settings. See below.
+      </div>
+					</div>
+				</div>
+			</div>
+
+                  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><span class="badge">Step 5</span> Permissions</div>
+
+      <div class="panel-body">Give the following directories read/write permissions. Chmod to 0777 (or 0755 if supported) on Linux.<br><br>
+      <div class="alert alert-info">
+      admin/backup/<br>
+      logs/
+      </div>
+      You may be able to do this directly in your FTP via the right click menu. They should all be world writeable.
+      </div>
+					</div>
+				</div>
+			</div>
+
+                  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><span class="badge">Step 6</span> Run Installer</div>
+
+      <div class="panel-body">Access the installer in your browser via the 'install/index.php' file. Follow the onscreen instructions.<br><br>
+      <b class="mm_red no-font-weight">Important: When you have run the installer, rename or delete the 'install' folder from your server</b>.<br><br>
+      (Advanced users may prefer to manually run the 'docs/schematic/schema.sql' file. If you prefer this method, update the geoIP database in the admin settings)</div>
+					</div>
+				</div>
+			</div>
+
+                  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><span class="badge">Step 7</span> Update Settings / Secure Folder Path</div>
+
+      <div class="panel-body">Once the installer is run, log into your administration centre (admin/index.php) with the user/pass you specified above and update your settings.<br><br>
+      You should make sure that the path is correct to your secure folder for the "<b>Server Path to Secure Folder</b>" option. This is a server path and NOT a http path. Use the "check" option
+      to see if the path you have entered exists correctly.</div>
+					</div>
+				</div>
+			</div>
+
+                  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><span class="badge">Step 8</span> Rename Admin Folder</div>
+
+      <div class="panel-body">For extra security it is recommended you rename the 'admin' folder to something else. If you rename the folder, enter the new folder name in the 'ADMIN_FOLDER' value
+      in the 'control/defined.php' file.</div>
+					</div>
+				</div>
+			</div>
+
+	  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><span class="badge">Step 9</span> Music File Setup</div>
+
+      <div class="panel-body">Refer to the <a href="music.html">MP3 Music Setup</a> section for help in uploading &amp; setting up your music files.</div>
+					</div>
+				</div>
+			</div>
+
+                  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><span class="badge">Step 10</span> Complete Music Store Setup &amp; Other Options</div>
+
+      <div class="panel-body">In your admin area use the Help pages if enabled to view help for each page/section.</div>
+					</div>
+				</div>
+			</div>
+
+	  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Help / Support</div>
+
+      <div class="panel-body">See the <a href="support.html">support</a> option if you are having problems or contact me directly.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row footerArea">
+			</div>
+        </div>
+
+</div>
+
+<script>
+//<![CDATA[
+jQuery(document).ready(function() {
+  loadTopMenu();
+  loadLeftMenu();
+  loadFooter();
+});
+//]]>
+</script>
+
+<script src="templates/js/bootstrap.js"></script>
+<script src="templates/js/plugins/jquery.metismenu.js"></script>
+<script src="templates/js/plugins/jquery.ibox.js"></script>
+
+</body>
+</html>

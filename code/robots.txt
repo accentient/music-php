@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /admin/
+Disallow: /callback/
+Disallow: /control/
+Disallow: /cover-art/
+Disallow: /docs/
+Disallow: /install/
+Disallow: /logs/
+Disallow: /previews/
+Disallow: /zip-files/

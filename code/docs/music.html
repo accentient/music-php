@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MP3 Music Setup: Documentation</title>
+
+    <link href="templates/css/bootstrap.css" rel="stylesheet">
+    <link href="templates/css/font-awesome/font-awesome.css" rel="stylesheet">
+	<link href="templates/css/mm-docs.css" rel="stylesheet">
+
+	<script src="templates/js/jquery.js"></script>
+	<script src="templates/js/functions.js"></script>
+
+	<link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Documentation</a>
+            </div>
+
+			<div class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+				</div>
+            </div>
+		</nav>
+
+        <div id="page-wrapper">
+                        <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">MP3 Music Setup</h1>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Overview</div>
+                        <div class="panel-body">Before you can add files to the system, they must be uploaded to your web server via FTP. FTP is better
+                        and faster than standard web form uploads. A lot of excellent, free FTP software exists and the following are recommended:<br><br>
+                        <div class="alert alert-info">
+                        <a href="http://filezilla-project.org/" onclick="window.open(this);return false">FileZilla</a><br>
+                        <a href="http://winscp.net" onclick="window.open(this);return false" title="WinSCP">WinSCP</a><br>
+                        <a href="http://cyberduck.ch/" onclick="window.open(this);return false" title="Cyber Duck">Cyberduck</a>
+                        </div>
+                        In Maian Music I have tried to make adding files as easy as possible.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+                  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><span class="badge">Step 1</span> Upload Full MP3 Files</div>
+                        <div class="panel-body">
+                        Upload your full MP3 downloads into your <a href="ad-settings.html">secure folder</a>, in any structure. Sub folders are supported.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><span class="badge">Step 2</span> Upload Preview MP3 Files</div>
+                        <div class="panel-body">
+                        Upload your preview MP3 files into the 'previews' folder, in any structure. Sub folders are supported. These should be short snippets
+                        of your main tracks. Maybe 20/30 second previews. There are free utilities that can help you create short snippets, here are a few:<br><br>
+                        <div class="alert alert-info">
+                        <a href="http://audacity.sourceforge.net/" onclick="window.open(this);return false">Audacity</a> (Recommended)<br>
+                        <a href="http://mpesch3.de1.cc/mp3dc.html" onclick="window.open(this);return false">MP3 Direct Cut</a> (Recommended)<br>
+                        <a href="http://www.mp3cutter.org/" onclick="window.open(this);return false">MP3 Cutter</a><br>
+                        <a href="http://musetips.com/free-mp3-cutter-and-editor.html" onclick="window.open(this);return false">MP3 Cutter &amp; Editor</a><br>
+                        <a href="http://www.eusing.com/free_mp3_cutter/mp3_cutter.htm" onclick="window.open(this);return false">Eusing Free MP3 Cutter</a><br>
+                        </div>
+                        Audacity &amp; MP3 Direct Cut are portable. MP3 Direct Cut offers batch processing.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><span class="badge">Step 3</span> Upload MP3 Cover Art</div>
+                        <div class="panel-body">
+                        Upload your MP3 cover art into the 'cover-art' folder, in any structure. Sub folders are supported.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><span class="badge">Step 4</span> Add Music to System</div>
+                        <div class="panel-body">
+                        Log into your Maian Music admin control panel to add your music. Add <a href="ad-new.html">collections</a> first, then <a href="ad-new-tracks.html">tracks</a>.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row footerArea">
+			</div>
+        </div>
+
+</div>
+
+<script>
+//<![CDATA[
+jQuery(document).ready(function() {
+  loadTopMenu();
+  loadLeftMenu();
+  loadFooter();
+});
+//]]>
+</script>
+
+<script src="templates/js/bootstrap.js"></script>
+<script src="templates/js/plugins/jquery.metismenu.js"></script>
+<script src="templates/js/plugins/jquery.ibox.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+                <span class="social"><span class="badge"><a href="{url}" onclick="window.open(this);return false"><i class="fa fa-{icon} fa-fw"></i></a></span></span>

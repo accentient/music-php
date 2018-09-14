@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Purchase History: Documentation</title>
+
+    <link href="templates/css/bootstrap.css" rel="stylesheet">
+    <link href="templates/css/font-awesome/font-awesome.css" rel="stylesheet">
+	<link href="templates/css/mm-docs.css" rel="stylesheet">
+
+	<script src="templates/js/jquery.js"></script>
+	<script src="templates/js/functions.js"></script>
+
+	<link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Documentation</a>
+            </div>
+
+			<div class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+				</div>
+            </div>
+		</nav>
+
+        <div id="page-wrapper">
+                        <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Purchase History</h1>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Overview</div>
+                        <div class="panel-body">Enables you to see an overview of sales by account.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Export Sales</div>
+                        <div class="panel-body">To export sales for this account to CSV click the <button type="button" class="btn btn-primary btn-sm"><i class="fa fa-save fa-fw"></i></button> button.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Filter Sales</div>
+                        <div class="panel-body">To filter sales click the <button type="button" class="btn btn-default btn-sm"><i class="fa fa-filter fa-fw"></i></button> button.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">View Invoice</div>
+                        <div class="panel-body">To view invoice, click the invoice number. This opens in a new window. To print to PDF, use a free PDF print server such as <a href="http://www.dopdf.com/" onclick="window.open(this);return false">doPDF</a>, <a href="http://thesz.diecru.eu/content/doro.php" onclick="window.open(this);return false">Doro</a>, <a href="http://www.bullzip.com" onclick="window.open(this);return false">Bullzip</a>, or <a href="http://en.pdf24.org/creator.html" onclick="window.open(this);return false">PDF24</a> etc</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Lock/Unlock Download Page</div>
+                        <div class="panel-body">If you feel its required you can lock the download page for a sale.<br><br>
+						Click <i class="fa fa-unlock-alt fa-fw mm_green"></i> to lock.<br>
+						Click <i class="fa fa-lock fa-fw mm_red"></i> to unlock.<br><br>
+						When you click either a small window opens where you can enter the lock reason. This is optional. For unlocking this text doesn`t display. Screenshot below:<br><br>
+						<img class="img-responsive" src="templates/images/screenshots/5.jpg" alt="" title="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Edit/Delete</div>
+                        <div class="panel-body">To edit a sale click the <i class="fa fa-pencil fa-fw mm_blue"></i> icon. To delete, click the <i class="fa fa-times fa-fw mm_red"></i> icon.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row footerArea">
+			</div>
+        </div>
+
+</div>
+
+<script>
+//<![CDATA[
+jQuery(document).ready(function() {
+  loadTopMenu();
+  loadLeftMenu();
+  loadFooter();
+});
+//]]>
+</script>
+
+<script src="templates/js/bootstrap.js"></script>
+<script src="templates/js/plugins/jquery.metismenu.js"></script>
+<script src="templates/js/plugins/jquery.ibox.js"></script>
+
+</body>
+</html>

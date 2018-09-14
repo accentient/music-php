@@ -1,0 +1,29 @@
+You are receiving this email because you have the following admin option enabled at "{WEBSITE}":
+
+"Lock Sales Page if More Than XX Download IP Addresses are Detected (Per Item)"
+
+Your limit is: {LIMIT}
+
+A sale item purchased by "{NAME}" has hit this limit with the latest click and this sale is now locked.
+
+Music Item Purchased:
+---------------------
+
+{ITEM}
+
+Click Report:
+-------------
+
+{REPORT}
+
+Sale clicks from different IPs in different countries should be treated as suspicious.
+
+To edit this sale, log into your administration area:
+
+{WEBSITE_URL}{ADMIN_FOLDER}
+
+You can disable this option in your administration settings:
+
+Settings > Other > Downloads
+
+Note that you should remove the sale lock AND delete the history entries to remove this restriction.

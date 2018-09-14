@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Language &amp; Templates: Documentation</title>
+
+    <link href="templates/css/bootstrap.css" rel="stylesheet">
+    <link href="templates/css/font-awesome/font-awesome.css" rel="stylesheet">
+	<link href="templates/css/mm-docs.css" rel="stylesheet">
+
+	<script src="templates/js/jquery.js"></script>
+	<script src="templates/js/functions.js"></script>
+
+	<link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Documentation</a>
+            </div>
+
+			<div class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+				</div>
+            </div>
+		</nav>
+
+        <div id="page-wrapper">
+                        <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Language &amp; Templates</h1>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Language</div>
+
+      <div class="panel-body">ALL files related to the default language are found in the following directory:<br><br>
+      <b>content/language/*</b>
+      </div>
+					</div>
+				</div>
+			</div>
+
+                  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Charset</div>
+
+      <div class="panel-body">Character encoding preferences are found in the following file:<br><br>
+      <b>content/language/global.php</b>
+      </div>
+					</div>
+				</div>
+			</div>
+
+                  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">General Language</div>
+
+      <div class="panel-body">ALL general language is found in the PHP files in the above folder:<br><br>
+      <b>content/language/admin.php</b> <span class="italics">(Admin)</span><br>
+      <b>content/language/global.php</b> <span class="italics">(Global)</span><br>
+      <b>content/language/js.php</b> <span class="italics">(Javascript)</span><br>
+      <b>content/language/checkout.php</b> <span class="italics">(Checkout)</span><br>
+      <b>content/language/public.php</b> <span class="italics">(Frontend)</span><br><br>
+      Use a good text editor to edit, such as <a href="http://notepad-plus-plus.org/" onclick="window.open(this);return false">Notepad++</a>. <b>DO NOT</b> edit in a word processor.<br><br>
+	  All apostrophes <b>MUST</b> be escaped. Example:<br><br>
+	  'it\'s christmas time',
+	  </div>
+					</div>
+				</div>
+			</div>
+
+                  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Timezones</div>
+
+      <div class="panel-body">Timezone text is editable in the following file:<br><br>
+      <b>control/timezones.php</b><br><br>
+      DO NOT remove the array keys. Example: Europe/London. If you remove these, the system will fail.</div>
+					</div>
+				</div>
+			</div>
+
+                  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Email Template Language</div>
+
+      <div class="panel-body">All the language in the emails is in the email template txt files:<br><br>
+      <b>content/language/email-templates/*.txt</b><br><br>
+      Again, use a good text editor to edit. The html wrapper is "content/language/email-templates/html-wrapper.html" for HTML emails.</div>
+					</div>
+				</div>
+			</div>
+
+                  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Language Packs</div>
+
+      <div class="panel-body">Available language packs can be found on the Maian Music <a href="http://www.maianmusic.com/language-packs.html" onclick="window.open(this);return false">website</a>.<br><br>
+      If you would like to submit a new language pack, please email it to me <a href="mailto:support@maianscriptworld.co.uk?subject=Maian%20Music%20Language%20Pack">here</a>.</div>
+					</div>
+				</div>
+			</div>
+
+                  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Templates / Integration</div>
+                        <div class="panel-body">
+						Maian Music uses the <a href="http://getbootstrap.com/" onclick="window.open(this);return false">Twitter Boostrap Web Framework</a> and <a href="http://fortawesome.github.io/Font-Awesome/icons/" onclick="window.open(this);return false">Font Awesome</a>. You can find more information and tutorials on the
+						relevant website.You`ll need a working knowledge of Twitter Bootstrap if you want to make extensive
+						template changes.<br><br>
+            Maian Music can be adapted into any existing web layout. <b>DO NOT</b> use PHP includes or iframes, its bad practice. Edit the templates correctly.
+						</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Responsive System</div>
+                        <div class="panel-body">
+						Maian Music is a responsive system for better performance on mobile phones and tablets. This means that the layout changes dramatically when the viewport
+            changes. For example, viewing on smaller screens (mobiles), where the viewport can be 320px max as opposed to browsers with higher screen areas. The default
+            layout might not quite work for your own content, so adjustments may be required. You`ll need a good understanding of responsive practices to make changes.
+						</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Themes</div>
+                        <div class="panel-body">
+						Maian Music is theme based. Each theme is located in the 'content' folder and is prefixed '_theme'. The default theme is '_theme_default'. So that
+            upgrades don`t break your layout, you should copy this folder and update the <a href="ad-settings.html">admin settings</a> for the new theme. Your theme MUST start '_theme' for the
+            system to pick it up. More default themes may be added in future versions.
+						</div>
+					</div>
+				</div>
+			</div>
+
+                  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Colours &amp; Appearance</div>
+
+      <div class="panel-body">For many people, changing the colours and a few default images is good enough. Maian Music utilises Cascading Stylesheets for colour display. ALL of the colours you
+      see for the default design are in the stylesheets. Maian Music has the following stylesheet locations and all the stylesheets can be edited in a good text editor.<br><br>
+
+      <b>content/*theme*/css/*.css</b> <span class="italics">(Frontend)</span><br>
+      <b>admin/templates/css/*.css</b> <span class="italics">(Admin)</span><br><br>
+
+      Edit these and choose whichever colours you want.</div>
+					</div>
+				</div>
+			</div>
+
+                  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Images</div>
+
+      <div class="panel-body">Images are located in the following folders:<br><br>
+      <b>content/*theme*/images/</b> <span class="italics">(Frontend)</span><br>
+      <b>admin/templates/images/</b> <span class="italics">(Admin)</span><br><br>
+	  Note that most images are rendered via the Font Awesome class.
+	  </div>
+					</div>
+				</div>
+			</div>
+
+                  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">References &amp; Reading</div>
+
+      <div class="panel-body"><a href="http://www.google.co.uk/#hl=en&amp;q=html" onclick="window.open(this);return false">HTML (Hypertext Markup Language)</a><br>
+      <a href="http://www.google.co.uk/#hl=en&amp;q=cascading+stylesheets" onclick="window.open(this);return false">CSS (Cascading Stylesheets)</a><br>
+      <a href="http://www.google.co.uk/#hl=en&amp;q=free+text+editors" onclick="window.open(this);return false">Free Text Editors</a><br></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row footerArea">
+			</div>
+        </div>
+
+</div>
+
+<script>
+//<![CDATA[
+jQuery(document).ready(function() {
+  loadTopMenu();
+  loadLeftMenu();
+  loadFooter();
+});
+//]]>
+</script>
+
+<script src="templates/js/bootstrap.js"></script>
+<script src="templates/js/plugins/jquery.metismenu.js"></script>
+<script src="templates/js/plugins/jquery.ibox.js"></script>
+
+</body>
+</html>

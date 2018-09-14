@@ -1,0 +1,57 @@
+Hello,
+
+An order has been processed in your music store, but its payment status is 'Pending'.
+
+If {GATEWAY} returned a reason it may be shown below:
+
+Reason: "{REASON}"
+Invoice Status: "{INV_STATUS}"
+Fraud Status: "{FRAUD_STATUS}"
+
+Order Details:
+
+--------------------------
+{C1} DOWNLOAD(S)
+--------------------------
+
+{DOWNLOADS}
+
+--------------------------
+{C2} CD(S)
+--------------------------
+
+{CDS}
+
+--------------------------
+
+Sub Total: {SUB}
+Discount: -{COUPON}
+Shipping: {SHIP}
+Tangible Goods Tax on {TCOUNT} item(s) and Shipping (if applicable) @ {RATE}%: {TAX}
+Digital Goods Tax on {DCOUNT} item(s) @ {RATE2}%: {TAX2}
+Order Total: {TOTAL}
+
+Prices in {CURRENCY}
+
+--------------------------
+
+The buyer has been contacted with details about this status if you have pending emails enabled.
+
+To review the details of this transaction, log in to your {GATEWAY} account:
+{GATE_URL}
+
+Once the payment is successfully processed further emails will follow.
+
+In the meantime, this sale should be viewable in your admin area under 'Pending Sales'.
+
+Once the payment gateway has verified the sale, it will be visible in the normal sales list.
+
+Remember you can have pending payments process as completed via 'Settings > Payment'.
+
+Kind regards,
+
+------------------------------------
+{WEBSITE}
+{WEBSITE_URL}
+
+Buyer IP Address(es): {IP}

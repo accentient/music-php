@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Database Backup: Documentation</title>
+
+    <link href="templates/css/bootstrap.css" rel="stylesheet">
+    <link href="templates/css/font-awesome/font-awesome.css" rel="stylesheet">
+	<link href="templates/css/mm-docs.css" rel="stylesheet">
+
+	<script src="templates/js/jquery.js"></script>
+	<script src="templates/js/functions.js"></script>
+
+	<link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Documentation</a>
+            </div>
+
+			<div class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+				</div>
+            </div>
+		</nav>
+
+        <div id="page-wrapper">
+                        <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Database Backup</h1>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Overview</div>
+						<div class="panel-body">Here you can backup your database, which is highly recommended in the event of a server crash. You should not totally rely on the backup option here, so maybe a backup from within your MySQL management software is also a good idea.</div>
+					</div>
+				</div>
+			</div>
+
+                        <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Download File</div>
+						<div class="panel-body">If you choose this option the 'Save As' dialogue is envoked asking you to save the file somewhere safe. Removeable media such as a flash drive is recommended.</div>
+					</div>
+				</div>
+			</div>
+                        <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Compress File</div>
+						<div class="panel-body">For large databases you should select the compression option to make the file size smaller. Compression is via GZip.</div>
+					</div>
+				</div>
+			</div>
+
+                        <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Restore Database</div>
+						<div class="panel-body">Restoring your database is fairly easy. You just need to navigate to your MySQL management software and run the backup SQL schematic. Most servers have PHPMyAdmin installed. Alternatively
+						you can use other good database software. Below are some example:<br><br>
+						<a href="http://www.heidisql.com" onclick="window.open(this);return false">HeidiSQL</a> (My software of choice for local administration on Windows and one of the best free pieces of software out there)<br>
+						<a href="http://www.phpmyadmin.net" onclick="window.open(this);return false">PHPMyAdmin</a> (Installed on many servers as the default database software. PHP based.)<br>
+						<a href="http://sqlbuddy.com" onclick="window.open(this);return false">SQL Buddy</a> (Lightweight PHP based software. Great alternative to PHPMyAdmin.)<br>
+						<a href="http://dev.mysql.com/downloads/tools/workbench/" onclick="window.open(this);return false">MySQL Workbench</a> (Alternative Windows based software from the MySQL creators)<br>
+						<a href="http://dbeaver.jkiss.org/" onclick="window.open(this);return false">Database Beaver</a>(Free database management software for Windows)
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row footerArea">
+			</div>
+        </div>
+
+</div>
+
+<script>
+//<![CDATA[
+jQuery(document).ready(function() {
+  loadTopMenu();
+  loadLeftMenu();
+  loadFooter();
+});
+//]]>
+</script>
+
+<script src="templates/js/bootstrap.js"></script>
+<script src="templates/js/plugins/jquery.metismenu.js"></script>
+<script src="templates/js/plugins/jquery.ibox.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+Hello {ACC_NAME},
+
+Thank you for placing an order at "{WEBSITE}". Order Details:
+
+--------------------------
+{C1} DOWNLOAD(S)
+--------------------------
+
+{DOWNLOADS}
+
+--------------------------
+{C2} CD(S)
+--------------------------
+
+{CDS}
+
+--------------------------
+
+Sub Total: {SUB}
+Discount: -{COUPON}
+Shipping: {SHIP}
+Tangible Goods Tax on {TCOUNT} item(s) and Shipping (if applicable) @ {RATE}%: {TAX}
+Digital Goods Tax on {DCOUNT} item(s) @ {RATE2}%: {TAX2}
+Order Total: {TOTAL}
+
+Prices in {CURRENCY}
+
+--------------------------
+
+Your order status is currently 'Pending'. If {GATEWAY} returned a reason it may be shown below:
+
+Reason: "{REASON}"
+Invoice Status: "{INV_STATUS}"
+Fraud Status: "{FRAUD_STATUS}"
+
+If you paid by echeck, these payments can take a few days to clear, so please be patient.
+
+Details of your clearance date can be found in your {GATEWAY} account area:
+{GATE_URL}
+
+Once your payment has been accepted and processed, a confirmation email will follow.
+
+If you need to contact us about your order, reply to this email.
+
+Thank you for your order,
+
+Kind regards,
+
+------------------------------------
+{WEBSITE}
+{WEBSITE_URL}
+
+Your IP address(es) logged as: {IP}

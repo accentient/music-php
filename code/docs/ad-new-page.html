@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add New Page: Documentation</title>
+
+    <link href="templates/css/bootstrap.css" rel="stylesheet">
+    <link href="templates/css/font-awesome/font-awesome.css" rel="stylesheet">
+	<link href="templates/css/mm-docs.css" rel="stylesheet">
+
+	<script src="templates/js/jquery.js"></script>
+	<script src="templates/js/functions.js"></script>
+
+	<link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Documentation</a>
+            </div>
+
+			<div class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+				</div>
+            </div>
+		</nav>
+
+        <div id="page-wrapper">
+                        <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Add New Page</h1>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Page Name</div>
+                        <div class="panel-body">Enter new page name.</div>
+					</div>
+				</div>
+			</div>
+
+                  <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Page Text/Information</div>
+                        <div class="panel-body">Enter text or information that appears on page. If you are using a custom template you can edit the template
+						directly if you prefer.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Set As Landing Page</div>
+                        <div class="panel-body">The landing page is the page people will see on accessing the root url of you music store. Sometimes called
+						the homepage. If you set a new page as the landing page, this overwrites the main system homepage.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Enabled</div>
+                        <div class="panel-body">Yes to enable, No to disable.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Custom Template</div>
+                        <div class="panel-body">Custom templates must be created in the following directory with the .tpl.php file extension:<br><br>
+						<div class="alert alert-info">
+						content/*THEME*/custom-pages/
+						</div>
+						Where *THEME* is the theme you are using.<br><br>
+            See the notes in the 'content/*THEME*/custom-pages/test.tpl.php' file for more information.<br><br>A contact form is included in Maian Music, for this to
+            load on any page set the custom template to 'contact.tpl.php'. If you need a more complex form, copy this file and make the necessary changes.
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Alternative Browser Title</div>
+                        <div class="panel-body">For <a href="http://en.wikipedia.org/wiki/Search_engine_optimization" onclick="window.open(this);return false">SEO</a>. Alternative browser title if required. Default is page name.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Meta Keywords</div>
+                        <div class="panel-body">For <a href="http://en.wikipedia.org/wiki/Search_engine_optimization" onclick="window.open(this);return false">SEO</a>. Optional. Will default to meta value in settings if set if applicable.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Meta Description</div>
+                        <div class="panel-body">For <a href="http://en.wikipedia.org/wiki/Search_engine_optimization" onclick="window.open(this);return false">SEO</a>. Optional. Will default to meta value in settings if applicable.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">URL Rewrite Slug</div>
+                        <div class="panel-body">For <a href="http://en.wikipedia.org/wiki/Search_engine_optimization" onclick="window.open(this);return false">SEO</a>. Your server must support rewrite rules via htaccess. Enable in <a href="ad-settings.html">settings</a>. If no custom
+						slug is set, system will create one from the page name. If your server doesn`t support this you may see a <b>500 Internal Server Error</b>.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row footerArea">
+			</div>
+        </div>
+
+</div>
+
+<script>
+//<![CDATA[
+jQuery(document).ready(function() {
+  loadTopMenu();
+  loadLeftMenu();
+  loadFooter();
+});
+//]]>
+</script>
+
+<script src="templates/js/bootstrap.js"></script>
+<script src="templates/js/plugins/jquery.metismenu.js"></script>
+<script src="templates/js/plugins/jquery.ibox.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings: Documentation</title>
+
+    <link href="templates/css/bootstrap.css" rel="stylesheet">
+    <link href="templates/css/font-awesome/font-awesome.css" rel="stylesheet">
+	  <link href="templates/css/mm-docs.css" rel="stylesheet">
+
+	  <script src="templates/js/jquery.js"></script>
+	  <script src="templates/js/functions.js"></script>
+
+	  <link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Documentation</a>
+            </div>
+
+			<div class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+				</div>
+            </div>
+		</nav>
+
+        <div id="page-wrapper">
+                        <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Settings</h1>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">General - Music Store Name</div>
+                        <div class="panel-body">Enter the name of your music store. Max 100 chars.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">General - Email Address</div>
+                        <div class="panel-body">Your main email address. Additional emails can be set via the SMTP tab.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">General - Store HTTP Path</div>
+                        <div class="panel-body">The FULL http path to your music store WITH trailing slash. This will be auto created on install.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">General - Server Path to Secure Folder </div>
+                        <div class="panel-body">FULL server path to your SECURE folder WITHOUT trailing slash. This is the folder that stores your <a href="music.html">FULL mp3 files</a>. It should NOT be
+                        accessible on the web for security. This is NOT a http web path. Examples of server paths are:<br><br>
+                        <div class="alert alert-info">
+                        /home/username/SECURE (Linux)<br>
+                        C:\SECURE (Windows)
+                        </div>
+                        Once your path is in place, use the "Check" option to see if the location is properly set.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">General - Enable Rewrite Functions</div>
+                        <div class="panel-body">This enables the search engine friendly urls. For this to work your server MUST support <a href="http://en.wikipedia.org/wiki/.htaccess" onclick="window.open(this);return false">.htaccess</a> and <a href="http://en.wikipedia.org/wiki/Rewrite_engine" onclick="window.open(this);return false">mod_rewrite</a>.<br><br>
+                        After enabling this option, rename the 'htaccess_COPY.txt' file to '.htaccess' in your installation.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Date/Time - Date Format</div>
+                        <div class="panel-body">Your preferred PHP date format. For supported options click <a href="http://php.net/manual/en/function.date.php" onclick="window.open(this);return false">here</a>.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Date/Time - Time Format</div>
+                        <div class="panel-body">Your preferred PHP time format. For supported options click <a href="http://php.net/manual/en/function.date.php" onclick="window.open(this);return false">here</a>.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Date/Time - Calendar Week Start</div>
+                        <div class="panel-body">When you click into date boxes a calendar appears. See the following screenshot:<br><br>
+                        <img class="img-responsive" src="templates/images/screenshots/13.jpg" alt="" title=""><br>
+                        This option determines whether the calendar view starts on Sunday or Monday. For example, UK is Sunday.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Date/Time - Timezone</div>
+                        <div class="panel-body">Default timezone. Dates and times are stored in UTC format and this option correctly displays dates for your timezone.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Date/Time - Calendar Date Format</div>
+                        <div class="panel-body">For the javascript calendar (above screenshot). Dates are auto converted to MySQL format on entry. This option
+                        is purely cosmetic.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Store - Default Meta Keywords</div>
+                        <div class="panel-body">Default meta keywords for your store. For search engines.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Store - Default Meta Description</div>
+                        <div class="panel-body">Default meta description for your store. For search engines.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Store - Theme</div>
+                        <div class="panel-body">Your preferred theme. See the <a href="language.html">themes</a> section for more information.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Store - Email Notification</div>
+                        <div class="panel-body">Set email notification options. Uncheck to disable, check to enable.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Store - Enable CD Purchase Option</div>
+                        <div class="panel-body">Enables or disables the CD purchase option from the store regardless of whether any prices are set. Useful if you
+                        only sell downloads. Note that an option to disable/enable the download options is NOT available as this is primarily a download system and
+                        downloads would be expected. You can edit the store templates if you don`t want the download option.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Store - Enable RSS Feeds</div>
+                        <div class="panel-body">Enables or disables the RSS feeds. RSS feeds are an easy way for people to keep up to date with your store content
+                        without visiting your site. Its an anonymous subscription, which is very popular. You can read up more on RSS feeds <a href="http://en.wikipedia.org/wiki/RSS" onclick="window.open(this);return false">here</a> if you aren`t sure what they are.<br><br>
+                        In Maian Music, feed links appear for the homepage, styles, latest and popular pages. If enabled you`ll see a link as shown in the example screenshot:<br><br>
+                        <img class="img-responsive" src="templates/images/screenshots/23.jpg" alt="" title=""><br>
+                        Note that RSS data MUST be viewed in a feed reader. Popular feed readers are:<br><br>
+                        <a href="http://www.rssowl.org/" onclick="window.open(this);return false">RSS Owl</a> (PC based)<br>
+                        <a href="https://quiterss.org/" onclick="window.open(this);return false">Quite RSS</a> (PC based)<br>
+                        <a href="https://feedly.com/" onclick="window.open(this);return false">InoReader</a> (Web based)<br>
+                        <a href="https://www.inoreader.com/" onclick="window.open(this);return false">Feedly</a> (Web based)
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Accounts - Minimum Password Length</div>
+                        <div class="panel-body">Minimum password length for new accounts. People use stupid passwords, so forcing them to enter a minimum
+                        amount of characters can help with better passwords.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Accounts - Email Notification</div>
+                        <div class="panel-body">Set email notification options. Uncheck to disable, check to enable.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Accounts - Enable Login Events for New Accounts</div>
+                        <div class="panel-body">Enable or disable login events for new accounts. Can be enabled / disabled per account later.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Accounts - Send Admin Alert Email if More Than XX Login IP Addresses are Detected (Per Account)</div>
+                        <div class="panel-body">This feature can detect account sharing. If set higher than 0, will notify admin if there are XX different
+                        login IPs on an account. Note that this should be used cautiously. These days people log in from all over the world on different devices
+                        with different IPs. Many also use proxies and VPNs to mask IPs. Set to a conservative limit if used. 0 to disable.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Payment - Payment Mode</div>
+                        <div class="panel-body">Most payment gateways have a sandbox mode enabling you to test the routines without taking live payments
+                        from credit cards. This option should ALWAYS be set for your preferred gateways and tested before going live. DO NOT simply
+                        set to live and expect it to work. If you have your configuration set wrong it will fail.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Payment - Processing Currency</div>
+                        <div class="panel-body">Your preferred payment processing currency. MUST be supported by your enabled gateways.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Payment - Currency Display</div>
+                        <div class="panel-body">Set how prices display in your store. Use character entities for special characters, NOT the actual character. So, for example
+                        for US dollars, enter &amp;#036; instead of simply &#036;. The {AMOUNT} var will parse into the actual price. Here are some examples:<br><br>
+                        <div class="alert alert-info">
+                        &amp;pound;{AMOUNT} > <b>UK</b> - This would display in your store as: &pound;2.99<br>
+                        &amp;#036;{AMOUNT} > <b>U.S</b> - This would display in your store as: &#036;2.99<br>
+                        {AMOUNT}&amp;euro; > <b>Euro</b> - This would display in your store as: 2.99&euro;<br>
+                        AU&amp;#036;{AMOUNT} > <b>Australian Dollar</b> - This would display in your store as: AU&#036;2.99<br>
+                        HKD&amp;#036;{AMOUNT} > <b>Hong Kong Dollar</b> - This would display in your store as: HKD&#036;2.99<br>
+                        </div>
+                        2.99 is just used as an example, not all your prices will be 2.99. Just in case thats what you were thinking. :)
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Payment - Next Invoice No</div>
+                        <div class="panel-body">The next invoice number. Usually 1 for a new store, but enter custom number if applicable.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Payment - Min Purchase Amount</div>
+                        <div class="panel-body">If applicable, the min sub total amount allowed before buyers can check out.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Payment - Enable Gateway Log</div>
+                        <div class="panel-body">This should be enabled initially while you are testing the gateways. If you are having problems, refer
+                        to the "logs" folder and the gateway logs. Once you are happy everything is working ok, you should remove ALL .txt files from the log
+                        folder and disable logging. Some txt files may contain sensitive data relating to your merchant account.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Payment - Process Pending as Completed</div>
+                        <div class="panel-body">In some cases a payment may initially be "Pending". An example would be an echeck payment via Paypal. In a case
+                        like this the payment is on hold until the payment clears. If you prefer you can treat this option as completed. It should be enabled
+                        with caution as a buyer could cancel the payment after they receive the download activation.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Payment - Always Hide Gateway Parameter Values</div>
+                        <div class="panel-body">If this is set, gateway parameter values are hidden using a password text box. See examples below:<br><br>
+                        <img class="img-responsive" src="templates/images/screenshots/24.jpg" alt="" title=""><br>
+                        <img class="img-responsive" src="templates/images/screenshots/25.jpg" alt="" title="">
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Tax - Default Tax Rate for Tangible Goods (CDs) (%)</div>
+                        <div class="panel-body">The default tax rate for tangible goods if applicable. This is global unless set per country (via the <a href="ad-new-country.html">countries</a> section). Enter number ONLY, no percentage sign. For the UK @ 20%, enter 20. Set to 0 to disable fixed rate.<br><br>Separating tangible tax from digital tax complies with the EU`s <a href="https://www.gov.uk/register-and-use-the-vat-mini-one-stop-shop" onclick="window.open(this);return false">MOSS</a> regulation.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Tax - Default Country for Tangible Tax</div>
+                        <div class="panel-body">The is the default country for tangible tax for tax purposes. If no country overrides are set for the buyers country, this country and the above default tax are used. For example, to comply with <a href="https://www.gov.uk/register-and-use-the-vat-mini-one-stop-shop" onclick="window.open(this);return false">MOSS</a> in the UK, you would set the default tax to 20% (current rate at the time of the docs and if you are VAT registered), specify the country as UK and have NO tangible tax overrides in place for countries. This
+                        would charge all buyers 20%, regardless of country.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Tax - Default Tax Rate for Digital Goods (Downloads) (%)</div>
+                        <div class="panel-body">The default tax rate for digital goods if applicable. This is global unlessset per country (via the <a href="ad-new-country.html">countries</a> section). Enter number ONLY, no percentage sign. For the UK @ 20%, enter 20. Set to 0 to disable fixed rate.<br><br>Separating tangible tax from digital tax complies with the EU`s <a href="https://www.gov.uk/register-and-use-the-vat-mini-one-stop-shop" onclick="window.open(this);return false">MOSS</a> regulation.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Tax - Default Country for Digital Tax</div>
+                        <div class="panel-body">The is the default country for digital tax for tax purposes. If no country overrides are set for the buyers country, this country and the above default tax are used. For example, to comply with <a href="https://www.gov.uk/register-and-use-the-vat-mini-one-stop-shop" onclick="window.open(this);return false">MOSS</a> in the UK, you would set the default tax to 20% (current rate at the time of the docs and if you are VAT registered), specify the country as UK and have E.U ONLY digital tax overrides in place for countries. This would charge
+                        all buyers 20%, unless they lived in the E.U, where they would be charged at their countries override rate.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Downloads - Download Links Expire (XX after sale is activated)</div>
+                        <div class="panel-body">If set, download link will expire after given time.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Downloads - Maximum Clicks Per Download Link</div>
+                        <div class="panel-body">If set, only a minimum amount of clicks are allowed per download. This can help reduce bandwidth as many
+                        people give friends log in details to download. You can`t do anything about file sharing, but you can keep your server costs down.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Downloads - Lock Sales Page if More Than XX Download IP Addresses are Detected (Per Item)</div>
+                        <div class="panel-body">If set, allows only a certain amount of IP addresses to access a download. Remember that these days people have multiple
+                        devices all with different IP addresses, so different IP addresses for the same download can be expected. On saying that it can also
+                        enable you to identify people who are sharing downloads. Enable with caution.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Downloads - Send Email Alert to Admin if Page is Locked</div>
+                        <div class="panel-body">Sends email to webmaster if account page is locked. Email details IP addresses and locations.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Downloads - Restrict Downloads to Original Sale IP Address</div>
+                        <div class="panel-body">Strict mode. Enables only the purchase IP to access downloads. Enable with caution. See previous note about multiple devices.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Downloads - Folder for Temporary Zip File Creation</div>
+                        <div class="panel-body">Collections are consolidated into zip files. On zip creation, a temp file is created and on download it is deleted. The server "tmp"
+                        directory is recommended for temp files as the servers garbage collector will perform auto cleanups. It should also be the fastest option. The
+                        "logs" folder can also be used if you have problems with the server directory.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Downloads - Enable Download Debug Log</div>
+                        <div class="panel-body">Enables the download log. Useful if you have people reporting issues with downloads. It is recommended you refer to
+                        this log when testing the system works to make sure downloads are working ok.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > SMTP > Host</div>
+                        <div class="panel-body">SMTP host or IP. When using SMTP it is recommended you use a stable SMTP service, like Mandrill or MailGun for mail
+                        delivery. This will make your emails more reliable. Any SMTP account can be used. Once your email details are in place use the test button
+                        to send a test message to all your accounts. If you still have issues, enable the mail debug log. See <a href="faq.html">F.A.Q</a><br><br>
+                        <div class="alert alert-warning" style="margin-bottom:0">
+                        <b>IMPORTANT</b>: If you are using Gmail, DO NOT use your Gmail password. You MUST create an app specific password in your Google account and use that. Also,
+                        ONLY use SSL if you have SSL installed. If you don`t, you should use TLS. For the Gmail port ONLY use 465 or 587.
+                        </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > SMTP > Username</div>
+                        <div class="panel-body">SMTP username if authentication is required.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > SMTP > Password</div>
+                        <div class="panel-body">SMTP password if authentication is required.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > SMTP > Security / Port</div>
+                        <div class="panel-body">SMTP security option and port number. Some services require SSL (such as Google) and others (such as Amazon) TLS.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > SMTP > From Name</div>
+                        <div class="panel-body">Your preferred "from" name for outgoing emails.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > SMTP > From Email</div>
+                        <div class="panel-body">Your preferred "from" email address for outgoing emails.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > SMTP > Additional Notification Email Addresses (CC) (Comma Delimit)</div>
+                        <div class="panel-body">Enter additional emails if you want notifications to go to other addresses besides your main address. Separate
+                        with a comma if you are using multiple. Additional emails are sent via Carbon Copy.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Social - AddThis Profile ID (for Social Buttons)</div>
+                        <div class="panel-body"><a href="http://www.addthis.com/" onclick="window.open(this);return false">AddThis</a> is a sharing service that
+                        enables you to easily put social sharing buttons on your site. Its a FREE service. To enable on collections pages, do the following:<br><br>
+                        <div class="alert alert-info">
+                        1. Sign up and enter your profile ID in the Maian Music settings box.<br>
+                        2. In the AddThis control panel, click "Tools" and select the free tool "Sharing Buttons". Configure your options, then click activate.<br>
+                        3. Make sure AddThis is enabled for collections in Maian Music via the "Social" tab.
+                        </div>
+                        Once enabled you should see the social buttons appear. Here is an example of how your buttons may look:<br><br>
+                        <img class="img-responsive" src="templates/images/screenshots/22.jpg" alt="" title=""><br>
+                        You can customise what displays via your AddThis control panel. Other paid options are available.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Social - Disqus Comments System - Short Name</div>
+                        <div class="panel-body"><a href="https://disqus.com/" onclick="window.open(this);return false">Disqus</a> is a FREE comments system. It enables people to comment
+                        on your collections. Maybe they have comments about certain tracks. To enable, sign up and enter short name. If you are already using Disqus you may
+                        have to add your music domain to the allowed domain list in your Disqus interface:<br><br>
+                        <div class="alert alert-info">Admin > Settings > Advanced > Trusted Domains</div>
+                        Everything is managed via the Disqus interface. If you aren`t familiar with Disqus, please take some time to familiarise yourself with the Disqus interface
+                        and settings. Its a very powerful comments system.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Social - Disqus Comments System - Category ID</div>
+                        <div class="panel-body">Enter Disqus category ID if applicable. </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Social - Pushover User Key / Pushover API Token/Key</div>
+                        <div class="panel-body"><a href="https://pushover.net/" onclick="window.open(this);return false">Pushover</a> is a notification
+                        system that lets you receive notifications to all Pushover enabled devices. For example, you may want to receive noification pings
+                        on your phone and not just via standard email. To enable, sign up for a Pushover account and enter your user key and token. You will
+                        receive notification when any new sale occurs in Maian Music.<br><br>
+                        Note: Your user key is shown on the main screen when you log into Pushover, to generate your token click "Apps &amp; Plugins" from the menu.<br><br>
+                        More information on their API <a href="https://pushover.net/api" onclick="window.open(this);return false">here</a>. To add more options in Maian Music, edit the
+                        following file:<br><br>
+                        <div class="alert alert-info">
+                        control/classes/class.apis.php
+                        </div>
+                        The "pushover" function contains the relevant code. Click the <button class="btn btn-warning btn-xs" onclick="pushTest()" type="button"><i class="fa fa-mobile fa-fw"></i> Test </button> button to send a test ping to your devices.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Social - Enable Facebook Open Graph Meta Data</div>
+                        <div class="panel-body">Facebooks <a href="https://developers.facebook.com/docs/sharing/best-practices" onclick="window.open(this);return false">Open Graph</a> tags make sharing data on Facebook easier. When someone enters a shop url, the data is
+                        pulled from your server and auto filled in on FB. To test, enter a collection url on your timeline and see what happens. After you type
+                        a spinner will appear as FB pulls the data. To test before enabling, try an Amazon link.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Social - Default Facebook Open Graph Image (http://)</div>
+                        <div class="panel-body">If someone shares a collection page, the image that would be shown would be the cover art if one exists. If no image
+                        is set, facebook will grab something from your page. Therefore you should also set a default image. You can also just modify the default
+                        system image which is located at:<br><br>
+                        <div class="alert alert-info">
+                        content/**THEME**/images/fb-default.png
+                        </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Social - Facebook Insights Unique ID</div>
+                        <div class="panel-body">If you use FB insights, enter your unique ID.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Twitter Consumer key, Consumer Secret, Access Token &amp; Access Token Secret</div>
+                        <div class="panel-body">Maian Music supports the Twitter Rest API so you can post tweets directly from the Maian Music control panel.<br><br>
+                        For more information and details on how to set up the Twitter API, click <a href="api-twitter.html">here</a>.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Social - Url to XXX Page (If Applicable)</div>
+                        <div class="panel-body">If you have a social site on any of these pages, enter your url. The buttons appear at the bottom of your store. See screenshot:<br><br>
+                        <img class="img-responsive" src="templates/images/screenshots/14.jpg" alt="" title="">
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Featured Music - Enter Keyword(s) to Search Products</div>
+                        <div class="panel-body">The featured music is what displays on your store homepage. If nothing is set, the latest 9 collections are shown. You can
+                        change this in the "control/defined.php" file via the following:<br><br>
+                        <div class="alert alert-info">
+                        define('FEATURED_HOME_LIMIT', 9);
+                        </div>
+                        To set featured collections, start to type in the box and suggestions will be shown. See the following screenshot:<br><br>
+                        <img class="img-responsive" src="templates/images/screenshots/15.jpg" alt="" title=""><br>
+                        Click to select and the collection will appear beneath the box. Once you have some collections you can drag/drop them to change
+                        the order and also use the X link to clear them. See the following screenshot:<br><br>
+                        <img class="img-responsive" src="templates/images/screenshots/16.jpg" alt="" title="">
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > System Status - Enable System</div>
+                        <div class="panel-body">Enable or disable the system.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > System Status - Auto Enable on Date</div>
+                        <div class="panel-body">If disable, set date to auto enable. Clicking into box launches the calendar.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > System Status - Offline Reason</div>
+                        <div class="panel-body">Enter reason for system being offline.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > System Status - Allow IP Addresses (Comma Delimit)</div>
+                        <div class="panel-body">When the system is offline you can allow access for any IPs. Useful if you want to disable access, but give your
+                        developer access. Multiple IPs separated with a comma if applicable.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Shipping Zones</div>
+                        <div class="panel-body">As Maian Music is a download system, shipping options are very basic for CDs. Enter name for shipping zone and rate.
+                        Rate can be fixed amount or percentage. ie: 2.99 applies 2.99 charge, 20% applies 20 of sub total. Cick the  <button type="button" class="btn btn-success"><i class="fa fa-plus fa-fw"></i></button> button to add boxes and the
+								        <button type="button" class="btn btn-success"><i class="fa fa-minus fa-fw"></i></button> to remove.<br><br>
+                        To remove specific entry, leave both boxes blank.
+								 </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Terms & Conditions Text - Enter Terms & Conditions Text</div>
+                        <div class="panel-body">Enter terms &amp; conditions text if this feature is enabled. HTML may be used here, but be careful NOT to break
+                        the responsive layout. ONLY use HTML acceptable for a &lt;div&gt; tag.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Terms & Conditions Text - Enable on Checkout</div>
+                        <div class="panel-body">Enable or disable on checkout screen. If enabled a checkbox appears asking the buyer to agree to the terms and conditions. A link to a pop up
+                        window will show the text above.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > License Agreement Email - Email Subject</div>
+                        <div class="panel-body">This enables you to send out a license agreement email after all music purchases. Useful for legal disclaimers. Enter subject for email.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > License Agreement Email - Email Message Body</div>
+                        <div class="panel-body">Enter body of message. HTML should NOT be used. Any links and line breaks will be auto converted on send. HTML tags
+                        will be stripped from the message if entered, so keep strictly to plain text and enter links without tags.<br><br>
+                        You can use the following tags to personalise the message:<br><br>
+                        <div class="alert alert-info">
+                        {NAME} = Buyer Name<br>
+                        {EMAIL} = Buyer Email Address<br>
+                        {DATE} = Purchase Date<br>
+                        {INVOICE} = Invoice No<br>
+                        {CD} = CDs Purchased (if applicable)<br>
+                        {CDD} - CD Downloads Purchased (if applicable)<br>
+                        {TRACKS} - Track Downloads Purchased (if applicable)<br>
+                        {ID} - Transaction / Payment ID
+                        </div>
+                        If you wish to change the strings, open the 'global.php' language file and edit the '$emvars' array.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > License Agreement Email - Enable License Agreement Email</div>
+                        <div class="panel-body">Enable or disable email.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Maxmind GeoIP Database - Locate MaxMind IPv4 CSV File</div>
+                        <div class="panel-body">Used to detect countries from IPv4 addresses. This is a free download from Maxmind. Note that you should download
+                        the zip file and unzip the CSV enclosed. DO NOT upload the zip file. You also need to make sure that your server can upload files of this size. If not your
+                        PHP.ini file may need adjusting and the server rebooting. Refer to the display for your limits. See the following screenshot:<br><br>
+                        <img class="img-responsive" src="templates/images/screenshots/17.jpg" alt="" title=""><br>
+                        At the time of these docs, the download location was:<br>
+                        <a href="http://geolite.maxmind.com/download/geoip/database/GeoIPCountryCSV.zip" onclick="window.open(this);return false"><i class="fa fa-download fa-fw"></i> http://geolite.maxmind.com/download/geoip/database/GeoIPCountryCSV.zip</a><br><br>
+                        Important: BOTH CSV files must be uploaded at any one time. DO NOT just upload one file.<br><br>
+                        <b class="mm_red no-font-weight">Important: The MySQL function "LOAD DATA LOCAL INFILE" must be available in your MySQL version for this to work. If it isn`t
+                        the import will fail.</b>
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Maxmind GeoIP Database - Locate MaxMind IPv6 CSV File</div>
+                        <div class="panel-body">Used to detect countries from IPv6 addresses. This is a free download from Maxmind. Note that you should download
+                        the gzipped file and unzip the CSV enclosed. DO NOT upload the gzip file. You also need to make sure that your server can upload files of this size. If not your
+                        PHP.ini file may need adjusting and the server rebooting. Refer to the display for your limits. See above screenshot.<br><br>
+                        At the time of these docs, the download location was:<br>
+                        <a href="http://geolite.maxmind.com/download/geoip/database/GeoIPv6.csv.gz" onclick="window.open(this);return false"><i class="fa fa-download fa-fw"></i> http://geolite.maxmind.com/download/geoip/database/GeoIPv6.csv.gz</a><br><br>
+                        Important: BOTH CSV files must be uploaded at any one time. DO NOT just upload one file.<br><br>
+                        <b class="mm_red no-font-weight">Important: The MySQL function "LOAD DATA LOCAL INFILE" must be available in your MySQL version for this to work. If it isn`t
+                        the import will fail.</b><br><br>
+                        <b class="mm_red no-font-weight"><i class="fa fa-warning fa-fw"></i> IPv6 is experimental</b>.
+                        </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Maxmind GeoIP Database - Enable GeoIP Functions</div>
+                        <div class="panel-body">Enable or disable GeoIP functions. It is recommended you do use these functions, further development may see
+                        them utilised further.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Footers - Public Store Footer</div>
+                        <div class="panel-body">This option will appear ONLY for the commercial licence and gives you the option to enter your own store footer. HMTL may be used.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Other > Footers - Admin Footer</div>
+                        <div class="panel-body">This option will appear ONLY for the commercial/white label licence and gives you the option to enter your own store admin footer. HMTL may be used.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row footerArea">
+			</div>
+        </div>
+
+</div>
+
+<script>
+//<![CDATA[
+jQuery(document).ready(function() {
+  loadTopMenu();
+  loadLeftMenu();
+  loadFooter();
+});
+//]]>
+</script>
+
+<script src="templates/js/bootstrap.js"></script>
+<script src="templates/js/plugins/jquery.metismenu.js"></script>
+<script src="templates/js/plugins/jquery.ibox.js"></script>
+
+</body>
+</html>

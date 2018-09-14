@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add New Style: Documentation</title>
+
+    <link href="templates/css/bootstrap.css" rel="stylesheet">
+    <link href="templates/css/font-awesome/font-awesome.css" rel="stylesheet">
+	<link href="templates/css/mm-docs.css" rel="stylesheet">
+
+	<script src="templates/js/jquery.js"></script>
+	<script src="templates/js/functions.js"></script>
+
+	<link rel="ICON" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Documentation</a>
+            </div>
+
+			<div class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+				</div>
+            </div>
+		</nav>
+
+        <div id="page-wrapper">
+                        <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Add New Style</h1>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Enter Style Names. One per row</div>
+                        <div class="panel-body">Enter new style names, one per row. Example:<br><br>
+						<div class="alert alert-info">
+						 Style One<br>
+						 Style Two<br>
+						 Style Three
+						</div>
+            A second, optional pipe delimited parameter may also be set, which is the custom slug if applicable. You MUST specify TWO pipes to delimit. Example:<br><br>
+						<div class="alert alert-info">
+						 Style One||slug-style-one<br>
+						 Style Two||slug-style-two<br>
+						 Style Three
+						</div>
+            Not all need to be specifed and the slugs can be edited later.
+						</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Style Type</div>
+                        <div class="panel-body">Specify if style is a top level style or sub style of existing style. Note that a top level style is simply a placeholder
+                        that toggles sub styles. You cannot add collections to top level styles if it contains sub styles.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Enable Style(s)</div>
+                        <div class="panel-body">Yes to enable the style, No to disable the style.</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Link to Collection</div>
+                        <div class="panel-body">This is a useful feature if you prefer to have a collection load when a style category is clicked. So, instead
+                        of showing all collections associated with that style it would load the specified collection.<br><br>
+                        To locate a collection, start typing in the box to initiate the auto complete. When you see the desired collection, click on it to set it. Use the delete
+                        icon to remove it. Note that the association isn`t complete until you add or edit a style.<br><br>
+                        Note that you cannot link a collection if the style is a top level style. If the top level is selected the "Link to Collection" tab is hidden.<br><br>
+                        Note that the auto complete only starts after min 4 characters are typed, to change this edit the 'AUTO_COMPLETE_MIN_LENGTH' value in the
+                        'control/defined.php' file.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row footerArea">
+			</div>
+        </div>
+
+</div>
+
+<script>
+//<![CDATA[
+jQuery(document).ready(function() {
+  loadTopMenu();
+  loadLeftMenu();
+  loadFooter();
+});
+//]]>
+</script>
+
+<script src="templates/js/bootstrap.js"></script>
+<script src="templates/js/plugins/jquery.metismenu.js"></script>
+<script src="templates/js/plugins/jquery.ibox.js"></script>
+
+</body>
+</html>

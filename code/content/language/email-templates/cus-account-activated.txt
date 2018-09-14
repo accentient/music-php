@@ -1,0 +1,15 @@
+Hello {NAME},
+
+Thank you for verifying your account at "{WEBSITE}".
+
+Please log in with your email address and preferred password.
+
+Note that passwords are encrypted in our database for security, so we cannot send you password reminders.
+
+If you have forgot your password, please use the reset option on the login page, thank you.
+
+Kind regards,
+
+-----------------------
+{WEBSITE}
+{WEBSITE_URL}

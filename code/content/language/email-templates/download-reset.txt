@@ -1,0 +1,18 @@
+Hello {NAME},
+
+The following music downloads have been reset as requested:
+
+Invoice / Sale No: #{INV}
+
+{DOWNLOADS}
+
+Please log into your account to download:
+{WEBSITE_URL}
+
+Any problems, please let us know.
+
+Kind regards,
+
+--------------------------------------------
+{WEBSITE}
+{WEBSITE_URL}
